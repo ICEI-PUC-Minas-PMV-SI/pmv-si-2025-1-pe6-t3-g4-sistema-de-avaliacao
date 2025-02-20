@@ -20,10 +20,10 @@ De modo a atender ao público descrito, o objetivo deste trabalho é construir u
 - Construir um sistema Back-end para hospedar uma API de filmes.
 
 - Desenvolver uma aplicação web e móvel que ofereça:
- - Avaliação de melhor programa.
- - Avaliação de pior programa.
- - Filmes ou séries mais votados.
- + Espaço para que o usuário possa justificar seu voto por meio de texto.
+  - Avaliação de melhor programa.
+  - Avaliação de pior programa.
+  - Filmes ou séries mais votados.
+  + Espaço para que o usuário possa justificar seu voto por meio de texto.
 
 - Desenvolver um filtro de exibição para filmes por gênero e data de lançamento, elencando-os de acordo com filtros de avaliação.
 
