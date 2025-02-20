@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Sistema de Avaliação de Filmes
 
 `CURSO: Sistemas de Informação`
 
@@ -6,20 +6,20 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto consiste no desenvolvimento de um sistema de avaliação de filmes que permite aos usuários cadastrarem-se, acessarem uma lista de filmes e avaliarem cada título com notas e comentários. A plataforma calculará a média das avaliações e poderá oferecer recomendações personalizadas com base nas preferências dos usuários.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Astor Franco de Sena Neto
+* Carlos Eduardo Gonçalves dos Santos
+* Jussara Ribeiro de Souza
+* Laura Luana Bastos Rocha
+* Paolla Alves Soares
+* Thiago Vinicius Costa Lara
 
 ## Orientador
 
-* Nome completo do professor 1
+* Kleber Jacques Ferreira de Souza
 
 # Planejamento
 
