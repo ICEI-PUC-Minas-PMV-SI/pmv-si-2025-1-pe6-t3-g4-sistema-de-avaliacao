@@ -12,12 +12,22 @@ A aplicação também estimulará a formação de uma comunidade interativa, com
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+De modo a atender ao público descrito, o objetivo deste trabalho é construir um sistema distribuído com interfaces em desktop e mobile para avaliação de filmes e séries. O aplicativo contará com um recurso que permitirá ao usuário criar, atualizar, consultar, e deletar as suas avaliações.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+##Objetivos específicos
+
+
+- Construir um sistema Back-end para hospedar uma API de filmes.
+
+- Desenvolver uma aplicação web e móvel que ofereça:
+
+   Avaliação de melhor programa.
+   Avaliação de pior programa.
+   Filmes ou séries mais votados.
+   Espaço para que o usuário possa justificar seu voto por meio de texto.
+
+- Desenvolver um filtro de exibição para filmes por gênero e data de lançamento, elencando-os de acordo com filtros de avaliação.
+
 
 ## Justificativa
 
