@@ -14,7 +14,7 @@ A aplicação também estimulará a formação de uma comunidade interativa, com
 
 De modo a atender ao público descrito, o objetivo deste trabalho é construir um sistema distribuído com interfaces em desktop e mobile para avaliação de filmes e séries. O aplicativo contará com um recurso que permitirá ao usuário criar, atualizar, consultar, e deletar as suas avaliações.
 
-##Objetivos específicos
+## Objetivos específicos
 
 
 - Construir um sistema Back-end para hospedar uma API de filmes.
