@@ -36,9 +36,20 @@ De acordo com um estudo realizado pelo instituto Reelgood em parceria com a Lear
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O software será voltado para usuários que buscam sugestões personalizadas de filmes de forma rápida e eficiente. O público-alvo inclui:
 
+Cinéfilos que desejam recomendações detalhadas e baseadas em suas preferências.
+
+Casais e famílias que querem sugestões compatíveis com diferentes gostos.
+
+Usuários de streaming que buscam otimizar suas escolhas.
+
+Fãs de gêneros específicos como terror, ficção científica e clássicos.
+
+Indecisos que costumam demorar para escolher um filme e precisam de sugestões diretas.
+
+
+O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a escolha do próximo filme a ser assistido.
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 > **Links Úteis**:
