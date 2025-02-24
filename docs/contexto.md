@@ -62,22 +62,43 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+Nesta seção, estão listados os requisitos funcionais e não funcionais do sistema, que detalham o escopo do projeto e as funcionalidades que devem ser implementadas.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|ID    | Descrição do Requisito                                      | Prioridade |
+|------|-------------------------------------------------------------|------------|
+|RF-001| Permitir que os usuários se registrem na plataforma         | ALTA       |
+|RF-002| Autenticação via login e senha                              | ALTA       |
+|RF-003| Opção de login social (Google, Facebook, etc.)              | BAIXA      |
+|RF-004| Permitir que os usuários adicionem filmes a uma lista de assistidos | ALTA       |
+|RF-005| Possibilidade de marcar filmes como "quero assistir"        | MÉDIA      |
+|RF-006| Opção de adicionar tags e notas pessoais aos filmes         | MÉDIA      |
+|RF-007| Os usuários podem avaliar filmes com uma nota               | ALTA       |
+|RF-008| Opção de escrever críticas e resenhas                       | ALTA       |
+|RF-009| Comentários em avaliações de outros usuários                | MÉDIA      |
+|RF-010| Permitir seguir outros usuários e visualizar suas listas e avaliações | ALTA       |
+|RF-011| Curtir e comentar críticas de outros usuários               | MÉDIA      |
+|RF-012| Pesquisa por título, diretor ou elenco                      | ALTA       |
+|RF-013| Filtros por gênero, ano de lançamento e avaliação           | ALTA       |
+|RF-014| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       |
+|RF-015| Sugestões de filmes recomendados por amigos seguidos        | MÉDIA      |
+|RF-016| Implementar um filtro que leia palavras em comentários e resenhas, destacando palavras-chave em um algoritmo de destaque | MEDIA       |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|ID     | Descrição do Requisito                                          | Prioridade |
+|-------|---------------------------------------------------------------|------------|
+|RNF-002| Tempo de resposta médio abaixo de 2 segundos para operações comuns | ALTA       |
+|RNF-003| Criptografia para armazenamento de senhas                      | ALTA       |
+|RNF-005| Interface intuitiva e responsiva                                | ALTA       |
+|RNF-007| Garantia de uptime de pelo menos 99,5%                         | ALTA       |
+|RNF-001| A aplicação deve suportar um grande número de usuários simultâneos | MÉDIA      |
+|RNF-006| Compatibilidade com dispositivos móveis                        | MÉDIA      |
+|RNF-004| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | MÉDIA      |
+|RNF-008| Implementação de backup periódico dos dados                    | MÉDIA      |
 
+<!--
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
@@ -93,6 +114,7 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma
 característica alvo da sua solução. Além disso, certifique-se de que
 todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
+// marcação -->
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
