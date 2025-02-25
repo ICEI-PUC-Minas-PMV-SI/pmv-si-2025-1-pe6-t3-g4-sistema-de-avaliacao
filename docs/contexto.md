@@ -60,8 +60,8 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito                                      | Prioridade |
-|------|-------------------------------------------------------------|------------|
+|ID    | Descrição do Requisito                                      | Prioridade | Responsável |
+|------|-------------------------------------------------------------|------------|-------------|
 |RF-001| Permitir que os usuários se registrem na plataforma         | ALTA       |
 |RF-002| Autenticação via login e senha                              | ALTA       |
 |RF-003| Opção de login social (Google, Facebook, etc.)              | BAIXA      |
@@ -83,14 +83,11 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID     | Descrição do Requisito                                          | Prioridade |
 |-------|---------------------------------------------------------------|------------|
-|RNF-002| Tempo de resposta médio abaixo de 2 segundos para operações comuns | ALTA       |
-|RNF-003| Criptografia para armazenamento de senhas                      | ALTA       |
-|RNF-005| Interface intuitiva e responsiva                                | ALTA       |
-|RNF-007| Garantia de uptime de pelo menos 99,5%                         | ALTA       |
-|RNF-001| A aplicação deve suportar um grande número de usuários simultâneos | MÉDIA      |
-|RNF-006| Compatibilidade com dispositivos móveis                        | MÉDIA      |
-|RNF-004| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | MÉDIA      |
-|RNF-008| Implementação de backup periódico dos dados                    | MÉDIA      |
+|RNF-001| Tempo de resposta médio abaixo de 2 segundos para operações comuns | ALTA       |
+|RNF-002| Criptografia para armazenamento de senhas                      | ALTA       |
+|RNF-003| Interface intuitiva e responsiva                                | ALTA       |
+|RNF-004| A aplicação deve suportar um grande número de usuários simultâneos | MÉDIA      |
+|RNF-005| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | BAIXA      |
 
 <!--
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
@@ -116,13 +113,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
