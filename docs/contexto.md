@@ -62,22 +62,16 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
-|RF-001| Permitir que os usuários se registrem na plataforma         | ALTA       |
-|RF-002| Autenticação via login e senha                              | ALTA       |
-|RF-003| Opção de login social (Google, Facebook, etc.)              | BAIXA      |
-|RF-004| Permitir que os usuários adicionem filmes a uma lista de assistidos | ALTA       |
-|RF-005| Possibilidade de marcar filmes como "quero assistir"        | MÉDIA      |
-|RF-006| Opção de adicionar tags e notas pessoais aos filmes         | MÉDIA      |
-|RF-007| Os usuários podem avaliar filmes com uma nota               | ALTA       |
-|RF-008| Opção de escrever críticas e resenhas                       | ALTA       |
-|RF-009| Comentários em avaliações de outros usuários                | MÉDIA      |
-|RF-010| Permitir seguir outros usuários e visualizar suas listas e avaliações | ALTA       |
-|RF-011| Curtir e comentar críticas de outros usuários               | MÉDIA      |
-|RF-012| Pesquisa por título, diretor ou elenco                      | ALTA       |
-|RF-013| Filtros por gênero, ano de lançamento e avaliação           | ALTA       |
-|RF-014| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       |
-|RF-015| Sugestões de filmes recomendados por amigos seguidos        | MÉDIA      |
-|RF-016| Implementar um filtro que leia palavras em comentários e resenhas, destacando palavras-chave em um algoritmo de destaque | MEDIA       |
+|RF-001| Permitir que os usuários se registrem na plataforma         | ALTA       | TODOS       |      
+|RF-002| Autenticação via login e senha                              | ALTA       | TODOS       | 
+|RF-003| Permitir que os usuários criem listas personalizadas com os filmes | ALTA       | PAOLLA  |
+|RF-004| Os usuários podem avaliar filmes com uma nota               | ALTA       | TODOS       |
+|RF-005| Opção de escrever críticas e resenhas                       | ALTA       | TODOS       |
+|RF-006| Busca através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
+|RF-007| Filtros por gênero, ano de lançamento e avaliação           | ALTA       | LAURA       |
+|RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  |
+|RF-009| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
+|RF-010| Sugestões de filmes recomendados por amigos seguidos        | BAIXA      | THIAGO  |
 
 ### Requisitos não Funcionais
 
@@ -87,7 +81,8 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 |RNF-002| Criptografia para armazenamento de senhas                      | ALTA       |
 |RNF-003| Interface intuitiva e responsiva                                | ALTA       |
 |RNF-004| A aplicação deve suportar um grande número de usuários simultâneos | MÉDIA      |
-|RNF-005| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | BAIXA      |
+|RNF-005| O programa deve ficar disponível por 80% do tempo                  | MÉDIA      |
+|RNF-006| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | BAIXA      |
 
 <!--
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
