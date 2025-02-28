@@ -160,13 +160,16 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 Para a construção da aplicação as tecnologias da aplicação serão:
 
-**IDE:** Visual Studio 2022.
+###IDE 
+Visual Studio 2022.
 
-**Banco de dados:** MySQL.
+###Banco de dados 
+MySQL.
 
-**Linguagem Back-end:** C#.
+###Linguagem Back-end
+C#.
 
-**Linguagem Front-end:** Javascript, html e css.
+### Linguagem Front-end Javascript, html e css.
 
 ### Frameworks utilizados 
 
@@ -176,11 +179,11 @@ Entity Framework Core - para modelagem do BD.
 
 React - Para a construção das páginas e para o consumo da API.
 
-# Bibliotecas
+### Bibliotecas
 
 JSON Web Token - Para fazer a autenticação e autorização dos usuários com tokens.
 
-# Ferramentas de teste da API:
+### Ferramentas de teste da API:
 
 Insomnia 
 
