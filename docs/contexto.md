@@ -157,9 +157,32 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Tecnologias Utilizadas
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Para a construção da aplicação as tecnologias da aplicação serão:
+
+IDE: Visual Studio 2022.
+
+Banco de dados: MySQL.
+
+Linguagem Back-end: C#.
+
+Linguagem Front-end: Javascript, html e css.
+
+Frameworks utilizados 
+
+ASP.NET Core web api - Para fazer a construção da API rest.
+Entity Framework Core - para modelagem do BD.
+React - Para a construção das páginas e para o consumo da API.
+
+Bibliotecas
+
+JSON Web Token - Para fazer a autenticação e autorização dos usuários com tokens.
+
+Ferramentas de teste da API:
+
+Insomnia 
+
 
 
 ![Image](https://github.com/user-attachments/assets/c4da9600-6db7-4f70-961f-f4abeb63aac8)
