@@ -111,7 +111,31 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+   **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferencias salvas disponiveis a qualquer momento e com segurança.
+   
+   **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas de filmes usando o critério que preferirem.
+   
+   **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre os filmes.
+   
+   **Criticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre os filmes e também saber a opnião de outras pessoas.
+   
+   **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes de forma mais prática e rápida filtrando por diversos aspectos das obras.
+   
+   **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
+   
+   **Seguir e ser seguido por outros usuários**: Cria um ambiente propicio para interações e novas amizades estreitando relações e o sentimento de comunidade.
+   
+   **Sugestões de acordo com amigos seguidos**: São sugeridos filmes de acordo com os perfis dos amigos que o usuário segue.
+   
+   **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
+   
+   **Interface responsiva**: A ferramenta é compatível com os ambientes mobile e desktop.
+   
+   **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo.
+  
+   **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo.
+
+   **Proteção contra ataques**: Os dados e informações sensíveis dos usuários ficam protegidos.
 
 # Arquitetura da Solução
 
