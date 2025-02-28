@@ -169,22 +169,18 @@ MySQL.
 ### Linguagem Back-end
 C#.
 
-### Linguagem Front-end Javascript, html e css.
+### Linguagem Front-end 
+Javascript, html e css.
 
 ### Frameworks utilizados 
-
 ASP.NET Core web api - Para fazer a construção da API rest.
-
 Entity Framework Core - para modelagem do BD.
-
 React - Para a construção das páginas e para o consumo da API.
 
 ### Bibliotecas
-
 JSON Web Token - Para fazer a autenticação e autorização dos usuários com tokens.
 
 ### Ferramentas de teste da API:
-
 Insomnia 
 
 
