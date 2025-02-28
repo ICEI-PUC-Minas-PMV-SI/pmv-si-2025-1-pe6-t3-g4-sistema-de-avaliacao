@@ -162,7 +162,7 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 
-![tecnologias](docs/img/tecnologias.png)
+![Image](https://github.com/user-attachments/assets/c4da9600-6db7-4f70-961f-f4abeb63aac8)
 
 ## Hospedagem
 
