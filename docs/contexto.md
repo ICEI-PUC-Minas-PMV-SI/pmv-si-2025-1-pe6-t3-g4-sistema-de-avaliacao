@@ -160,13 +160,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 Para a construção da aplicação as tecnologias da aplicação serão:
 
-###IDE 
+### IDE 
 Visual Studio 2022.
 
-###Banco de dados 
+### Banco de dados 
 MySQL.
 
-###Linguagem Back-end
+### Linguagem Back-end
 C#.
 
 ### Linguagem Front-end Javascript, html e css.
