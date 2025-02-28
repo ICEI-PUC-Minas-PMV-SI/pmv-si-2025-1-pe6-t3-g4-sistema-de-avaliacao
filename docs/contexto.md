@@ -52,6 +52,12 @@ O software será voltado para usuários que buscam sugestões personalizadas de 
 O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a escolha do próximo filme a ser assistido.
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
+## Personas
+![persona 3](https://github.com/user-attachments/assets/805d3308-c1f1-423a-b34a-8434de321f29)
+![Persona 2](https://github.com/user-attachments/assets/f2b47951-41ca-47a8-ad15-60163a2b7275)
+![persona 1](https://github.com/user-attachments/assets/5dc74172-575f-4e11-a162-7580281bf101)
+
+
 # Especificações do Projeto
 
 ## Requisitos
