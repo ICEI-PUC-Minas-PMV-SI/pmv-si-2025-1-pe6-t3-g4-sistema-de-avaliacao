@@ -162,7 +162,7 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 
-![tecnologias](docs/img/tecnologias.png)
+![tecnologias]([(https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t3-g4-sistema-de-recomendacao/blob/main/docs/img/tecnologias.png))
 
 ## Hospedagem
 
