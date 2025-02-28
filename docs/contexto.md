@@ -174,7 +174,9 @@ Javascript, html e css.
 
 ### Frameworks utilizados 
 ASP.NET Core web api - Para fazer a construção da API rest.
+
 Entity Framework Core - para modelagem do BD.
+
 React - Para a construção das páginas e para o consumo da API.
 
 ### Bibliotecas
@@ -184,6 +186,7 @@ JSON Web Token - Para fazer a autenticação e autorização dos usuários com t
 Insomnia 
 
 
+### Figura de uma solicitação e resposta de uma requisição HTTP.
 
 ![Image](https://github.com/user-attachments/assets/c4da9600-6db7-4f70-961f-f4abeb63aac8)
 
