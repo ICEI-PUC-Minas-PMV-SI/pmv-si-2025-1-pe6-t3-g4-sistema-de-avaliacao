@@ -150,7 +150,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+**1. FRONT-END WEB**: Interface com a qual os usuários interagirão ao utilizarem a ferramenta.
+
+**2. APLICATIVO MOBILE**: Permite a utilização da ferramenta de forma acessivel e prática. Garantindo que os usuários possam ter mais liberdade de locomoção.
+
+**3. API**: Mecanismo que permitirá a comunicação entre os componentes da ferramenta.
+
 
 ![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
 
