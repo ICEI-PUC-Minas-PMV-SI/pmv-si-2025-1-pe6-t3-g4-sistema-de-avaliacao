@@ -52,7 +52,7 @@ O software será voltado para usuários que buscam sugestões personalizadas de 
 O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a escolha do próximo filme a ser assistido.
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
-## Personas
+## Diagramas de Personas
 1.
 ![persona 3](https://github.com/user-attachments/assets/805d3308-c1f1-423a-b34a-8434de321f29)
 
@@ -122,31 +122,31 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-   **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferencias salvas disponiveis a qualquer momento e com segurança.
+  - **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferencias salvas disponiveis a qualquer momento e com segurança.
    
-   **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas de filmes usando o critério que preferirem.
+  - **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas de filmes usando o critério que preferirem.
    
-   **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre os filmes.
+  - **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre os filmes.
    
-   **Criticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre os filmes e também saber a opnião de outras pessoas.
+  - **Criticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre os filmes e também saber a opnião de outras pessoas.
    
-   **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes de forma mais prática e rápida filtrando por diversos aspectos das obras.
+  - **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes de forma mais prática e rápida filtrando por diversos aspectos das obras.
    
-   **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
+  - **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
    
-   **Seguir e ser seguido por outros usuários**: Cria um ambiente propicio para interações e novas amizades estreitando relações e o sentimento de comunidade.
+  - **Seguir e ser seguido por outros usuários**: Cria um ambiente propicio para interações e novas amizades estreitando relações e o sentimento de comunidade.
    
-   **Sugestões de acordo com amigos seguidos**: São sugeridos filmes de acordo com os perfis dos amigos que o usuário segue.
+  - **Sugestões de acordo com amigos seguidos**: São sugeridos filmes de acordo com os perfis dos amigos que o usuário segue.
    
-   **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
+  - **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
    
-   **Interface responsiva**: A ferramenta é compatível com os ambientes mobile e desktop.
+  - **Interface responsiva**: A ferramenta é compatível com os ambientes mobile e desktop.
    
-   **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo.
+  - **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo.
   
-   **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo.
+  - **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo.
 
-   **Proteção contra ataques**: Os dados e informações sensíveis dos usuários ficam protegidos.
+  - **Proteção contra ataques**: Os dados e informações sensíveis dos usuários ficam protegidos.
 
 # Arquitetura da Solução
 
