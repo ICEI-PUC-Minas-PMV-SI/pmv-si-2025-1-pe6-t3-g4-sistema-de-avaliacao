@@ -53,6 +53,8 @@ O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 ## Diagramas de Personas
+Diagramas de personas são representações visuais de personagens fictícias que sintetizam as características, comportamentos, necessidades e objetivos de um grupo de usuários. Com base nelas, conseguiremos compreender e focar no público-alvo durante o desenvolvimento da aplicação.
+
 1.
 ![persona 3](https://github.com/user-attachments/assets/805d3308-c1f1-423a-b34a-8434de321f29)
 
