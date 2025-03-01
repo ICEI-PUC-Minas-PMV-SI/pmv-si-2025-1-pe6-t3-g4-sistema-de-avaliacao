@@ -157,7 +157,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 **3. API**: Mecanismo que permitirá a comunicação entre os componentes da ferramenta.
 
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t3-g4-sistema-de-recomendacao/blob/main/docs/img/arquitetura.jpg)
 
 
 ## Tecnologias Utilizadas
