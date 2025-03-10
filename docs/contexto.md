@@ -90,11 +90,7 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 |ID     | Descrição do Requisito                                          | Prioridade |
 |-------|---------------------------------------------------------------|------------|
 |RNF-001| Tempo de resposta médio abaixo de 2 segundos para operações comuns | ALTA       |
-|RNF-002| Criptografia para armazenamento de senhas                      | ALTA       |
-|RNF-003| Interface intuitiva e responsiva                                | ALTA       |
-|RNF-004| A aplicação deve suportar um grande número de usuários simultâneos | MÉDIA      |
-|RNF-005| O programa deve ficar disponível por 80% do tempo                  | MÉDIA      |
-|RNF-006| Proteção contra ataques como SQL Injection e Cross-Site Scripting (XSS) | BAIXA      |
+|RNF-002| Interface intuitiva e responsiva                                | ALTA       |
 
 <!--
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
