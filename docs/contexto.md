@@ -74,16 +74,12 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
-|RF-001| Permitir que os usuários se registrem na plataforma         | ALTA       | TODOS       |      
-|RF-002| Autenticação via login e senha                              | ALTA       | TODOS       | 
-|RF-003| Permitir que os usuários criem listas personalizadas com os filmes | ALTA       | PAOLLA  |
-|RF-004| Os usuários podem avaliar filmes com uma nota               | ALTA       | TODOS       |
-|RF-005| Opção de escrever críticas e resenhas                       | ALTA       | TODOS       |
-|RF-006| Busca através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
-|RF-007| Filtros por gênero, ano de lançamento e avaliação           | ALTA       | LAURA       |
-|RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  |
-|RF-009| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
-|RF-010| Sugestões de filmes recomendados por amigos seguidos        | BAIXA      | THIAGO  |
+|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA E ASTOR  |      
+|RF-002| Permitir que os usuários criem e alterem listas personalizadas com os filmes | ALTA       | PAOLLA  |
+|RF-003| Permitir que os usuários avaliem obras audiovisuias através de críticas e resenhas    | ALTA       | THIAGO  |
+|RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
+<!-- |RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  | -->
+|RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
 
 ### Requisitos não Funcionais
 
@@ -91,6 +87,7 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 |-------|---------------------------------------------------------------|------------|
 |RNF-001| Tempo de resposta médio abaixo de 2 segundos para operações comuns | ALTA       |
 |RNF-002| Interface intuitiva e responsiva                                | ALTA       |
+|RNF-003| Portabilidade para celulares                                | BAIXA       |
 
 <!--
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
