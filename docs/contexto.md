@@ -78,8 +78,9 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 |RF-002| Permitir que os usuários criem e alterem listas personalizadas com os filmes | ALTA       | PAOLLA  |
 |RF-003| Permitir que os usuários avaliem obras audiovisuias através de críticas e resenhas    | ALTA       | THIAGO  |
 |RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
-<!-- |RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  | -->
 |RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
+
+<!-- |RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  | -->
 
 ### Requisitos não Funcionais
 
@@ -163,7 +164,7 @@ Para a construção da aplicação as tecnologias da aplicação serão:
 Visual Studio 2022.
 
 ### Banco de dados 
-MySQL.
+SQL Server.
 
 ### Linguagem Back-end
 C#.
