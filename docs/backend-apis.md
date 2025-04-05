@@ -140,5 +140,15 @@ Para validar a qualidade da aplicação e garantir uma boa experiencia para o Us
   **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
 
 # Referências
+**API de filmes para abastecimento do Banco de Dados:**
+- The Movie Database (TMDB), disponível em: https://developer.themoviedb.org/reference/intro/getting-started
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+**Documentação:**
+- ASP.NET Core, disponível em: https://learn.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-6.0
+- Entity Framework Core, disponível em: https://learn.microsoft.com/pt-br/ef/core/
+
+**Bibliotecas:**
+- JSON Web Token, disponível em: https://www.npmjs.com/package/jsonwebtoken
+
+**Ferramentas de teste da API:**
+- Insomnia, disponível em: https://insomnia.rest/download
