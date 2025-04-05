@@ -146,7 +146,7 @@ Banco de Dados: Amazon RDS(SQL Server).
 
 ### Hospedagem
 
-A hospedagem será feita usitlizando a Amazon EC2 (Elastic Computer Cloud) da AWS.
+A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 
 ## Testes
