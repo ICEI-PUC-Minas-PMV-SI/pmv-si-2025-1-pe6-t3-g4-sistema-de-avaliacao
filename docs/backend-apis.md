@@ -81,9 +81,11 @@ Essa entidade não possui atributos adicionais, apenas mantém o relacionamento.
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+No desenvolvimento da API foram utilizados as tecnologias.
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+Visual Studio 2022.
+SQL Server Management Studio 20.
+Insomnia.
 
 ## API Endpoints
 
@@ -120,13 +122,25 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+Para a implantação utilizando Windows e os serviços da AWS, foram escolhidos os requisitos:
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+### Requisitos de Hardware
+
+Máquina virtual vCPUs.
+Memória: Pelo menos 4 GB de RAM.
+Armazenamento de disco: 20GB.
+
+### Requisitos de Software
+
+Sistema operacional: Microsoft Windows Server 2019.
+.NET SDK: .NET 8.
+Servidor Web: IIS (Windows)
+Banco de Dados: Amazon RDS(SQL Server).
+
+### Hospedagem
+
+A hospedagem será feita usitlizando a Amazon EC2 (Elastic Computer Cloud) da AWS.
+
 
 ## Testes
 
