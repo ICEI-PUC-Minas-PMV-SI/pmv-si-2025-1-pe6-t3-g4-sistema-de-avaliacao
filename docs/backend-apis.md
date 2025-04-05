@@ -84,7 +84,9 @@ Essa entidade não possui atributos adicionais, apenas mantém o relacionamento.
 No desenvolvimento da API foram utilizados as tecnologias.
 
 Visual Studio 2022.
+
 SQL Server Management Studio 20.
+
 Insomnia.
 
 ## API Endpoints
@@ -127,14 +129,19 @@ Para a implantação utilizando Windows e os serviços da AWS, foram escolhidos 
 ### Requisitos de Hardware
 
 Máquina virtual vCPUs.
+
 Memória: Pelo menos 4 GB de RAM.
+
 Armazenamento de disco: 20GB.
 
 ### Requisitos de Software
 
 Sistema operacional: Microsoft Windows Server 2019.
+
 .NET SDK: .NET 8.
-Servidor Web: IIS (Windows)
+
+Servidor Web: IIS (Windows).
+
 Banco de Dados: Amazon RDS(SQL Server).
 
 ### Hospedagem
