@@ -130,13 +130,20 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+< !-- [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
 2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
 3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste. --!>
+
+Para validar a qualidade da aplicação e garantir uma boa experiencia para o Usuário, foram realizados teste através do Insomnia, uma ferramenta que permite testar, depurar e interagir com APIs web. Os testes foram realizados com base em nossos requisitos, sendo assim divididos de acordo com sua funcionalidade:
+
+## Consulta de Obras:
+- Objetivo: Caso o usuário queira explorar nosso banco de dados ou esteja a procura de uma obra especifica, será possível pesquisar por ela através do método GET.
+  - Requisição esperada: Parâmetros obrigatórios são preenchidos corretamente pelo Usuário, o sistema os interpreta e retorna 201:sucesso.
+  - Requisição inválida: Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
 
 # Referências
 
