@@ -10,8 +10,7 @@ O objetivo é criar uma aplicação que estimule a interação dentro de uma com
 ## Modelagem da Aplicação
 📚 Descrição da Estrutura de Dados da Aplicação
 
-🧑‍💼 Usuário
-Armazena os dados dos usuários do sistema.
+🧑‍💼 Usuário - Armazena os dados dos usuários do sistema.
 
 Id (int) – Identificador único.
 
@@ -28,8 +27,7 @@ Um usuário pode comentar vários filmes.
 Um usuário pode favoritar vários filmes.
 
 
-🎬 Filme
-Contém os dados dos filmes disponíveis na aplicação.
+🎬 Filme - Contém os dados dos filmes disponíveis na aplicação.
 
 Id (int) – Identificador único.
 
@@ -50,8 +48,7 @@ Um filme pode ter vários comentários.
 Um filme pode ser favoritado por vários usuários.
 
 
-💬 Comentário
-Representa as mensagens deixadas pelos usuários nos filmes.
+💬 Comentário - Representa as mensagens deixadas pelos usuários nos filmes.
 
 Id (int) – Identificador único.
 
@@ -67,6 +64,7 @@ Comentário é uma entidade fraca associada a Usuário e Filme com cardinalidade
 
 
 ⭐ Favorito
+
 Entidade associativa que representa a relação N:N entre Usuário e Filme, ou seja, um usuário pode favoritar vários filmes e um filme pode ser favoritado por vários usuários.
 
 IdUsuario (int) – Chave estrangeira para Usuario.
