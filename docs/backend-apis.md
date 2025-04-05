@@ -8,12 +8,73 @@ O objetivo é criar uma aplicação que estimule a interação dentro de uma com
 
 
 ## Modelagem da Aplicação
+📚 Descrição da Estrutura de Dados da Aplicação
+🧑‍💼 Usuário
+Armazena os dados dos usuários do sistema.
+
+Id (int) – Identificador único.
+
+Nome (string) – Nome do usuário.
+
+Email (string) – E-mail para login e contato.
+
+Senha (string) – Senha criptografada para autenticação.
+
+Relacionamentos:
+
+Um usuário pode comentar vários filmes.
+
+Um usuário pode favoritar vários filmes.
+
+🎬 Filme
+Contém os dados dos filmes disponíveis na aplicação.
+
+Id (int) – Identificador único.
+
+Titulo (string) – Nome do filme.
+
+AnoLancamento (int) – Ano de lançamento do filme.
+
+Genero (string) – Gênero principal do filme.
+
+Sinopse (string) – Resumo da história do filme.
+
+FotoUrl (string) – Caminho da imagem de capa do filme.
+
+Relacionamentos:
+
+Um filme pode ter vários comentários.
+
+Um filme pode ser favoritado por vários usuários.
+
+💬 Comentário
+Representa as mensagens deixadas pelos usuários nos filmes.
+
+Id (int) – Identificador único.
+
+Texto (string) – Conteúdo do comentário.
+
+UsuarioId (int) – Chave estrangeira que referencia o autor (Usuario).
+
+FilmeId (int) – Chave estrangeira que referencia o filme comentado.
+
+Relacionamento:
+
+Comentário é uma entidade fraca associada a Usuário e Filme com cardinalidade muitos-para-um para ambos.
+
+⭐ Favorito
+Entidade associativa que representa a relação N:N entre Usuário e Filme, ou seja, um usuário pode favoritar vários filmes e um filme pode ser favoritado por vários usuários.
+
+IdUsuario (int) – Chave estrangeira para Usuario.
+
+IdFilme (int) – Chave estrangeira para Filme.
+
+Essa entidade não possui atributos adicionais, apenas mantém o relacionamento.
+
 ![image](https://github.com/user-attachments/assets/dbc72f78-ad89-47cf-9b12-862ccf5eee56)
 ![image](https://github.com/user-attachments/assets/88936491-c581-4095-8bd0-a4ce12fcd56a)
 ![image](https://github.com/user-attachments/assets/28389195-bdee-4b4a-aad5-e4e0beae31b7)
 ![image](https://github.com/user-attachments/assets/b10869ac-f75c-473c-b8aa-35231e2ad126)
-
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 
 ## Tecnologias Utilizadas
