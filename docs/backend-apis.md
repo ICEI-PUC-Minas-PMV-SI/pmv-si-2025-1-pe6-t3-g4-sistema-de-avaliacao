@@ -133,9 +133,18 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 Para validar a qualidade da aplicação e garantir uma boa experiencia para o Usuário, foram realizados teste através do Insomnia, uma ferramenta que permite testar, depurar e interagir com APIs web. Os testes foram realizados com base em nossos requisitos, sendo assim divididos de acordo com sua funcionalidade:
 
 ## Consulta de Obras:
-- Objetivo: Caso o usuário queira explorar nosso banco de dados ou esteja a procura de uma obra especifica, será possível pesquisar por ela através do método GET.
+- Objetivo: Caso o usuário esteja a procura de uma obra ou um gênero específico, será possível pesquisar por eles através do método GET.
   
-  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário, o sistema os interpreta e retorna 201:sucesso.
+  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Id do Filme ou Id do Gênero), o sistema os interpreta e retorna 200: sucesso.
+  ![image](https://github.com/user-attachments/assets/1139bae1-41d0-4612-8681-189b642016eb)
+  
+  **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 404: Not Found.
+  ![image](https://github.com/user-attachments/assets/2e07863e-5e76-4356-9725-b7ea750175d0)
+
+## Resenha de Obras:
+- Objetivo: O usuário terá como avaliar suas obras já assistidas com críticas textuais detalhando sua esperiência, sendo possível criá-las pelo método POST, atualizá-las com o método PUT e deletá-las com o método DELETE. 
+  
+  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Id do Filme e Id do Usuário), o sistema os interpreta e retorna 201: criado.
   
   **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
 
