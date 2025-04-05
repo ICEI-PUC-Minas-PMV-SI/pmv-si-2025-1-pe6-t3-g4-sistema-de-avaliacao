@@ -74,8 +74,8 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
-|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA E ASTOR  |      
-|RF-002| Permitir que os usuários criem e alterem listas personalizadas com os filmes | ALTA       | PAOLLA  |
+|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA  |      
+|RF-002| Permitir que os usuários criem e alterem listas de favoritos com as obras | ALTA       | PAOLLA  |
 |RF-003| Permitir que os usuários avaliem obras audiovisuias através de críticas e resenhas    | ALTA       | THIAGO  |
 |RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
 |RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
@@ -117,39 +117,38 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-  - **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferencias salvas disponiveis a qualquer momento e com segurança.
+  - **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferências salvas disponiveis a qualquer momento e com segurança.
    
-  - **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas de filmes usando o critério que preferirem.
+  - **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas das suas obras favoritas.
    
-  - **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre os filmes.
+  - **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre obras audiovisuias.
    
-  - **Criticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre os filmes e também saber a opnião de outras pessoas.
+  - **Críticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre obras audiovisuias e também saber a opnião de outras pessoas.
    
-  - **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes de forma mais prática e rápida filtrando por diversos aspectos das obras.
+  - **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes, séries e programas de forma mais prática e rápida filtrando por diversos aspectos das obras.
    
   - **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
    
-  - **Seguir e ser seguido por outros usuários**: Cria um ambiente propicio para interações e novas amizades estreitando relações e o sentimento de comunidade.
+  - **Seguir e ser seguido por outros usuários**: Cria um ambiente propício para interações e novas amizades estreitando relações e o sentimento de comunidade.
    
-  - **Sugestões de acordo com amigos seguidos**: São sugeridos filmes de acordo com os perfis dos amigos que o usuário segue.
+  - **Sugestões de acordo com amigos seguidos**: São sugeridas obras de acordo com os perfis dos amigos que o usuário segue.
    
   - **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
    
   - **Interface responsiva**: A ferramenta é compatível com os ambientes mobile e desktop.
-   
-  - **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo.
-  
-  - **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo.
 
   - **Proteção contra ataques**: Os dados e informações sensíveis dos usuários ficam protegidos.
+
+<!-- **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo. -->
+<!-- **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo. -->
 
 # Arquitetura da Solução
 
 **1. FRONT-END WEB**: Interface com a qual os usuários interagirão ao utilizarem a ferramenta.
 
-**2. APLICATIVO MOBILE**: Permite a utilização da ferramenta de forma acessivel e prática. Garantindo que os usuários possam ter mais liberdade de locomoção.
+**2. APLICATIVO MOBILE**: Permite a utilização da ferramenta de forma acessível e prática. Garantindo que os usuários possam ter mais liberdade de locomoção.
 
-**3. API**: Mecanismo que permitirá a comunicação entre os componentes da ferramenta.
+**3. API E BACK-END**: Mecanismo que permitirá a comunicação entre os componentes da ferramenta e o armazenamento dos dados da plataforma.
 
 
 ![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t3-g4-sistema-de-recomendacao/blob/main/docs/img/arquitetura.jpg)
