@@ -8,6 +8,11 @@ O objetivo é criar uma aplicação que estimule a interação dentro de uma com
 
 
 ## Modelagem da Aplicação
+![image](https://github.com/user-attachments/assets/dbc72f78-ad89-47cf-9b12-862ccf5eee56)
+![image](https://github.com/user-attachments/assets/88936491-c581-4095-8bd0-a4ce12fcd56a)
+![image](https://github.com/user-attachments/assets/28389195-bdee-4b4a-aad5-e4e0beae31b7)
+![image](https://github.com/user-attachments/assets/b10869ac-f75c-473c-b8aa-35231e2ad126)
+
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 
