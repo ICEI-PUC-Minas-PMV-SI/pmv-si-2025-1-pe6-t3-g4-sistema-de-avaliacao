@@ -36,7 +36,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="https://github.com/Paollaks/api-web-services-avaliacao-manager.git"> Código Fonte</a></li>
 
 # Apresentação
 
