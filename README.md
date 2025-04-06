@@ -10,7 +10,6 @@ O projeto consiste no desenvolvimento de um sistema de avaliação de filmes que
 
 ## Integrantes
 
-* Astor Franco de Sena Neto
 * Carlos Eduardo Gonçalves dos Santos
 * Jussara Ribeiro de Souza
 * Laura Luana Bastos Rocha
