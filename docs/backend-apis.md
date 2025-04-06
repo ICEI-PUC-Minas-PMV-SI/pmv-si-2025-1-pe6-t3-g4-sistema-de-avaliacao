@@ -165,9 +165,11 @@ Para validar a qualidade da aplicação e garantir uma boa experiencia para o Us
 ## Resenha de Obras:
 - Objetivo: O usuário terá como avaliar suas obras já assistidas com críticas textuais detalhando sua esperiência, sendo possível criá-las pelo método POST, atualizá-las com o método PUT e deletá-las com o método DELETE. 
   
-  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Id do Filme e Id do Usuário), o sistema os interpreta e retorna 201: criado.
+  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Texto referênte a resenha), o sistema os interpreta e retorna 201: criado.
+  ![image](https://github.com/user-attachments/assets/36aa605c-5397-476c-a053-6534699aaa07)
   
   **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
+  ![image](https://github.com/user-attachments/assets/983e908c-c61a-451b-b7c0-05b26a167640)
 
   ## Gestão do Perfil de Usuário:
 - Objetivo: O usuário consegue gerenciar seu perfil completamente, tendo como realizar todos os métodos de um CRUD, como por exemplo atulizar suas informações com o método PUT.
