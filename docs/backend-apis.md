@@ -169,6 +169,24 @@ Para validar a qualidade da aplicação e garantir uma boa experiencia para o Us
   
   **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
 
+  ## Gestão do Perfil de Usuário:
+- Objetivo: O usuário consegue gerenciar seu perfil completamente, tendo como realizar todos os métodos de um CRUD, como por exemplo atulizar suas informações com o método PUT.
+  
+  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Id de Usuário, Nome, E-mail e Senha), o sistema os interpreta e retorna 204: No Content.
+  ![image](https://github.com/user-attachments/assets/be3ddccc-acf8-4e92-aa61-ad838e19f12f)
+
+  **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 400: Bad Request.
+  ![image](https://github.com/user-attachments/assets/569b711b-3b59-470c-87d2-54a291853a5b)
+
+  ## Lista de Favoritos:
+- Objetivo: É possível vizualizar a lista de favoritos de acordo com o gosto de cada usuário, que podem criá-las e deletá-las livremente através dos métodos GET, POST e DELETE respectivamente.
+  
+  **- Requisição esperada:** Parâmetros obrigatórios são preenchidos corretamente pelo Usuário(Id do Filme e Id do Usuário), o sistema os interpreta e retorna 200: sucesso.
+  
+  
+  **- Requisição inválida:** Cao o usuário passe parâmetros de Id inválidos, a aplicação retornará 404: Not Found.
+  
+
 # Referências
 **API de filmes para abastecimento do Banco de Dados:**
 - The Movie Database (TMDB), disponível em: https://developer.themoviedb.org/reference/intro/getting-started
