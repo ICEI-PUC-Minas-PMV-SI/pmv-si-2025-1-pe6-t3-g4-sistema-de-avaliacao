@@ -167,12 +167,19 @@ Insomnia.
     ```
 
 ## Considerações de Segurança
-Para evitar que os dados pessoais dos Usuários sejam expostos, a aplicação fará uso de algumas práticas de segurança:
 
-- Implementação de autenticação de Usuário através de tokens JSON Web Token.
-- Senhas criptografada e armazenamento seguro das credenciais de acesso.
-- Uso de requisições HTTPS para garantir comunicação segura.
-- Controle de acesso a certas operações da API com base no tipo de Usuário.
+Para garantir a integridade dos dados e a privacidade dos usuários na aplicação de gerenciamento de filmes, serão adotadas medidas essenciais de segurança. A plataforma foi pensada para oferecer uma experiência segura, protegendo informações sensíveis e controlando o acesso aos recursos de forma eficiente, em conformidade com diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD).
+
+As principais práticas implementadas incluem:
+
+- **Implementação de autenticação de usuário através de tokens JSON Web Token (JWT):** apenas usuários autenticados poderão acessar os recursos protegidos da API. O token é gerado no momento do login e validado em cada requisição subsequente.
+
+- **Senhas criptografadas e armazenamento seguro das credenciais de acesso:** todas as senhas serão protegidas com algoritmos de criptografia robustos, evitando o vazamento de informações sensíveis.
+
+- **Uso de requisições HTTPS para garantir comunicação segura:** toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
+
+- **Controle de acesso a certas operações da API com base no tipo de usuário:** funcionalidades como comentar, favoritar ou visualizar recomendações estarão disponíveis apenas conforme o nível de acesso de cada usuário, evitando usos indevidos da plataforma.
+
 
 ## Implantação
 
