@@ -16,7 +16,10 @@
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+![image](https://github.com/user-attachments/assets/24488250-ab25-42b0-a48b-9f41a698c900)
+![image](https://github.com/user-attachments/assets/c4aa7bb0-81cd-4429-ab72-108e97bf5ba5)
+
+
 
 ## Tecnologias Utilizadas
 [Lista das tecnologias principais que serão utilizadas no projeto.]
