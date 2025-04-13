@@ -16,7 +16,8 @@
 
 ## Fluxo de Dados
 
-![image](https://github.com/user-attachments/assets/24488250-ab25-42b0-a48b-9f41a698c900)
+![image](https://github.com/user-attachments/assets/97c91a2d-6976-46b0-9a16-dba3c41a378b)
+
 ![image](https://github.com/user-attachments/assets/c4aa7bb0-81cd-4429-ab72-108e97bf5ba5)
 
 
