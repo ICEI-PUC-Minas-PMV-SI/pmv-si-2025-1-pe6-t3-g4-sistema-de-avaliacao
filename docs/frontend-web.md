@@ -8,7 +8,7 @@ A interface web do projeto foi desenvolvida para ser a principal porta de entrad
 
 ### Wireframes
 
-# Layout das Páginas
+#### Layout das Páginas
 A estrutura foi pensada para garantir navegação fluida e acesso rápido às principais funcionalidades:
 
  - Página Inicial (Home):
