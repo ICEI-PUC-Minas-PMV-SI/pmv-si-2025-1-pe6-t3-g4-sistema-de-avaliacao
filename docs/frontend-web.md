@@ -20,11 +20,11 @@ Possuí também uma barra de pesquisa para localização de obras audiovisuais.
 - Painel do Usuário:
 
 A aba do usuário possuí 4 opções de páginas para acesso do usuário, sendo elas:
-   _ Perfil, referente a página de gestão dos dados do Usuário;
-   _ Avaliações, onde ficam as obras avaliadas por esse Usuário;
-   _ Favoritados, onde ficam as obras favoritadas por esse Usuário;
-   _ Perfis Seguidos, que dá acesso aos perfis seguidos pelo Usuário;
-   _ Desconectar, opção para desconectar a conta da aplicação (Sign Out).
+  - Perfil, referente a página de gestão dos dados do Usuário
+  - Avaliações, onde ficam as obras avaliadas por esse Usuário
+  - Favoritados, onde ficam as obras favoritadas por esse Usuário
+  - Perfis Seguidos, que dá acesso aos perfis seguidos pelo Usuário
+  - Desconectar, opção para desconectar a conta da aplicação (Sign Out).
 
 
 - Criação Usuário:
