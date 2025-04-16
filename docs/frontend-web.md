@@ -12,11 +12,13 @@ A interface web do projeto foi desenvolvida para ser a principal porta de entrad
 A estrutura foi pensada para garantir navegação fluida e acesso rápido às principais funcionalidades:
 
 - Página Inicial (Home):
+
 Destaca os filmes disponíveis na aplicação para avalização, com um menu interativo que guia o Usuário até as outras páginas do site, incluindo uma aba específica para redirecionamentos relacionados ao Usuário.
 Possuí também uma barra de pesquisa para localização de obras audiovisuais.
 
 
 - Painel do Usuário:
+
 A aba do usuário possuí 4 opções de páginas para acesso do usuário, sendo elas:
   - Perfil, referente a página de gestão dos dados do Usuário;
   - Avaliações, onde ficam as obras avaliadas por esse Usuário;
@@ -26,15 +28,18 @@ A aba do usuário possuí 4 opções de páginas para acesso do usuário, sendo 
 
 
 - Criação Usuário:
+
 Caso o usuário não possua uma conta, ele concegue acessar a página para cadastro pela aba Perfil, disponível no painel do Usuário, que também sera o caminho a ser seguido para se conectar (Login) a aplicação.
 Para criar um novo Usuário, é necessário fornecer um E-mail, uma senha, nome completo e nome de usuário (visível para os outros Usuários).
 
 
 - Login de Usuário:
+
 Nessa página, o usuário consegue se conectar a aplicação para salvar suas informações (Obras avaliadas e/ou favoritadas), além de ter acesso a página de recuperação de senha.
 
 
 - Nova Senha:
+
 Caso o Usuário tenha se esquecido de sua senha inicial, é possível definir uma nova através do fornecimento do E-mail cadastrado e uma nova senha para cadastro.
 
 
@@ -44,10 +49,12 @@ Mostra as informações cadastrais do Usuário (Nome completo, e-mail e nome de 
 
 
 - Perfil Público do Usuário:
+
 Nesta página o Usuário tem acesso ao "Nome de Usuário" de outras contas, assim como suas listas de obras avaliadas e favoritadas, sendo possível seguí-lo para acompanhar seu perfil.
 
 
 - Perfis Seguidos:
+
 O Usuário pode acompanhar seus perfis seguidos e suas listas criadas através dessa página, tendo como pesquisar por um perfil específico pela barra de pesquisa.
 
 
@@ -67,14 +74,17 @@ Grid responsivo com poster e a nota média da obra, representada por estrelas, q
 
 
 - Lista de Favoritos:
+
 Pelo menu superior é possível acessar a página das Listas de Favoritos, que mostra todas as listas criadas pelos Usuários.
 
 
 - Lista de Avaliados:
+
 Pelo perfil público de outros Usuários é possível acessar a página de Obras Avaliadas, que mostra as obras que foram avaliadas pelo Usuário selecionado.
 
 
  - Página Filmes por gênero:
+
 Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém às separando pelo seu gênero, possuindo também uma barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
 
 
