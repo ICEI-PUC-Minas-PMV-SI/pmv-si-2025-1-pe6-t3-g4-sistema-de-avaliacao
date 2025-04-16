@@ -24,7 +24,7 @@ A aba do usuário possuí 4 opções de páginas para acesso do usuário, sendo 
    - Avaliações, onde ficam as obras avaliadas por esse Usuário.
    - Favoritados, onde ficam as obras favoritadas por esse Usuário.
    - Perfis Seguidos, que dá acesso aos perfis seguidos pelo Usuário.
-   - Desconectar, opção para desconectar a conta da aplicação (Sign Out).
+   + Desconectar, opção para desconectar a conta da aplicação (Sign Out).
 
 
 - Criação Usuário:
