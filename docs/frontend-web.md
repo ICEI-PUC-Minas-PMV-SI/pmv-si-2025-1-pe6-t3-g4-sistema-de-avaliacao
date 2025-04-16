@@ -4,15 +4,54 @@
 
 ## Projeto da Interface Web
 
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface web do projeto foi desenvolvida para ser a principal porta de entrada do usuário, proporcionando uma experiência intuitiva, agradável e alinhada com a temática cinematográfica. Com um design minimalista e objetivo, priorizamos a usabilidade e a imersão visual, incorporando elementos que remetem à atmosfera do cinema, como as cores características de baldes de pipoca e salas de projeção.
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+- Layout das Páginas
+A estrutura foi pensada para garantir navegação fluida e acesso rápido às principais funcionalidades:
+
+ - Página Inicial (Home):
+
+Destaque para os filmes disponíveis na aplicação para avalização, com um menu interativo que guia o Usuário até as outras páginas do site.
+
+Incluí também uma Barra de pesquisa para localização de obras audiovisuais.
+
+- Página Filmes por gênero:
+
+Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém as separando pelo seu gênero, posuindo também uma Barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
+
+- Página das Obras Favoritas:
+
+Grid responsivo com poster das obras e o botão de favoritar, que incluirá ela em sua Lista de Favoritados.
+
+- Página das Obras Avaliadas:
+
+Grid responsivo com poster das obras e a nota média da obra representada por estrelas, que permite uma nova avalização quando selecionada, direcionando o Usuário para um painel.
+
+- Painel das Obras:
+
+ Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre. 
+
+- Perfil do Usuário:
+
+Mostra as informações cadastrais do Usuário (Nome completo, e-mail e nome de Usuário), além do histórico de obras avaliadas e/ou favoritadas, com a possibilidade de atualização dos dados ou exclusão da conta.
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+- Paleta de Cores:
+
+Tons de vermelho e bege, inspirados na coloração de pipocas e no ambiente acolhedor das salas de cinema.
+
+Contrastes sutis com preto e azul escuro para evocar a sensação de telão e poltronas de cinema.
+
+Tipografia limpa e legível, com fontes Instrument Serif para melhor leitura em diferentes dispositivos.
+
+- Elementos Gráficos:
+
+Ícones simples (como lupa para referenciar a pesquisa e uma silhueta humana para representar a área do Usuário) usados de forma discreta para reforçar a identidade visual.
+
+Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cinematográficas.
 
 ## Fluxo de Dados
 
