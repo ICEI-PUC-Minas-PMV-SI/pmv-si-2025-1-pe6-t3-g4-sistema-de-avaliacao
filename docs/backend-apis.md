@@ -94,7 +94,7 @@ Insomnia.
 ## API Endpoints
 
 ## Endpoint 1: Obras
-### Perquisa de Obras
+### - Perquisa de Obras
 - Método: GET
 - URL: /api/Filmes/tmdb
 - Parâmetros:
@@ -125,7 +125,7 @@ Insomnia.
     }
     ```
 
-### Perquisa de Obras pelo Gênero
+### - Perquisa de Obras pelo Gênero
 - Método: GET
 - URL: api/filmes/genero/{idGenero}
 - Parâmetros:
@@ -169,7 +169,7 @@ Insomnia.
     ```
 
 ## Endpoint 2: Avaliações de Obras
-### Comentar obra
+### - Comentar obra
 - Método: POST
 - URL: /api/comentarios
 - Parâmetros:
@@ -197,7 +197,7 @@ Insomnia.
     ```
     ```
 
-### Editar comentário
+### - Editar comentário
 - Método: PUT
 - URL: /api/comentarios/{Id}
 - Parâmetros:
@@ -215,7 +215,7 @@ Insomnia.
     ```
 
 ## Endpoint 3: Gestão de Usuário
-### Criação de Usuário
+### - Criação de Usuário
 - Método: POST
 - URL: /api/usuarios
 - Parâmetros:
@@ -258,7 +258,7 @@ Insomnia.
     "Já existe um usuário com esse E-mail."
     ```
     
-### Atualização de dados
+### - Atualização de dados
 - Método: PUT
 - URL: /api/usuarios/{id}
 - Parâmetros:
@@ -276,7 +276,7 @@ Insomnia.
     ```
     ```
 
-### Excluir Usuário
+### - Excluir Usuário
 - Método: DELETE
 - URL: /api/usuarios/{id}
 - Parâmetros:
