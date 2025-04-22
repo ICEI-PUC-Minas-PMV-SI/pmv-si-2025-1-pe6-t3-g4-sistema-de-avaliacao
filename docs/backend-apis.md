@@ -14,7 +14,9 @@ O objetivo é criar uma aplicação que estimule a interação dentro de uma com
 
 Id (int) – Identificador único.
 
-Nome (string) – Nome do usuário.
+NomeCompleto (string) – Nome do usuário.
+
+NomeDeUsuário (string) - Nome público do Usuário na plataforma.
 
 Email (string) – E-mail para login e contato.
 
@@ -81,7 +83,7 @@ Essa entidade não possui atributos adicionais, apenas mantém o relacionamento.
 
 ## Tecnologias Utilizadas
 
-No desenvolvimento da API foram utilizados as tecnologias.
+No desenvolvimento da API foram utilizados as tecnologias:
 
 Visual Studio 2022.
 
@@ -91,7 +93,8 @@ Insomnia.
 
 ## API Endpoints
 
-### Endpoint 1: Pesquisa de Obras
+## Endpoint 1: Obras
+### Perquisa de Obras
 - Método: GET
 - URL: /api/Filmes/tmdb
 - Parâmetros:
@@ -118,30 +121,57 @@ Insomnia.
   - Erro (404 Not Found)
     ```
     {
-      "message": "Nenhum filme encontrado."
+     "Nenhum filme encontrado."
     }
     ```
 
-### Endpoint 2: Atualização de Usuário
-- Método: PUT
-- URL: /api/usuarios/{id}
+### Perquisa de Obras pelo Gênero
+- Método: GET
+- URL: api/filmes/genero/{idGenero}
 - Parâmetros:
-  - Id <int, chave Primária>: Identificador do Usuário.
-  - Nome <string, Obrigatório>: Nome do Usuário.
-  - Email <string, Obrigatório>: E-mail do Usuário
-  - Senha <string, Obrigatório>: Senha de acesso do Usuário.
+  - Id <int, chave Primária>: Id correspondente a obra.
+  - Titulo <string, Obrigatório>: Título da Obra.
+  - AnoLancamento <int>: Ano de Lançamento da Obra.
+  - Genero <string>: Gênero da Obra.
+  - Sinopse <string>: Sinopse da Obra.
+  - FotoUrl <string>: Foto/Poster da Obra.
 
 - Resposta:
-  - Sucesso (200 No Content):  Sem corpo de resposta.
+  - Sucesso (200 OK)
     ```
+		{
+			"$id": "2",
+			"id": 1197306,
+			"titulo": "Resgate Implacável",
+			"anoLancamento": 2025,
+			"genero": "Ação",
+			"sinopse": "Ele quer viver uma vida simples e ser um bom pai para sua filha. Mas quando a filha adolescente de seu chefe, Jenny, desaparece, ele é chamado para reempregar as habilidades que o tornaram uma figura lendária nas operações secretas.",
+			"fotoUrl": "https://image.tmdb.org/t/p/w500/iT6yYCAuMQwm1PV4nByrsrsIOhG.jpg",
+			"usuariosFavoritaram": {
+				"$id": "3",
+				"$values": []
+			},
+			"comentarios": {
+				"$id": "4",
+				"$values": []
+			},
+			"links": {
+				"$id": "5",
+				"$values": []
+			}
+		}
     ```
-  - Erro (400 Bad Request)
+  - Erro (404 Not Found)
     ```
+    {
+      "Nenhum filme encontrado para o gênero {idGenero}."
+    }
     ```
 
-### Endpoint 3: Resenha de Obras
+## Endpoint 2: Avaliações de Obras
+### Comentar obra
 - Método: POST
-- URL: /api/Comentarios
+- URL: /api/comentarios
 - Parâmetros:
  - Id <int, chave Primária>: Identificador do Comentário.
  - Texto <string, Obrigatório>: Resenha relacionada a Obra.
@@ -149,20 +179,114 @@ Insomnia.
  - TMDBFilmeId <int>: Identificador da Obra.
 
 - Resposta:
-  - Sucesso (201 Created):  Sem corpo de resposta.
+  - Sucesso (201 Created):
     ```
     {
-    "$id": "1",
-    "id": 1,
-    "texto": "show de bola",
-    "idUsuario":1,
-    "tmdbFilmeId":2,
-    "links":{
-    ...
+	"$id": "1",
+	"id": 4,
+	"texto": "Chato demais",
+	"idUsuario": 1,
+	"tmdbFilmeId": 254,
+	"links": {
+		"$id": "2",
+		"$values": []
      }
     }
     ```
+  - Erro (400 Bad Request): Sem corpo de resposta.
+    ```
+    ```
+
+### Editar comentário
+- Método: PUT
+- URL: /api/comentarios/{Id}
+- Parâmetros:
+ - Id <int, chave Primária>: Identificador do Comentário.
+ - Texto <string, Obrigatório>: Resenha relacionada a Obra.
+ - IdUsuario <int>: Identificador do Usuário.
+ - TMDBFilmeId <int>: Identificador da Obra.
+
+- Resposta:
+  - Sucesso (204 No Content):  Sem corpo de resposta.
+    ```
+    ```
+  - Erro (400 Bad Request): Sem corpo de resposta.
+    ```
+    ```
+
+## Endpoint 3: Gestão de Usuário
+### Criação de Usuário
+- Método: POST
+- URL: /api/usuarios
+- Parâmetros:
+  - Id <int, chave Primária>: Identificador do Usuário.
+  - NomeCompleto <string, Obrigatório>: Nome do Usuário.
+  - NomeDeUsuario <string, Obrigatório>: Nome público do Usuário na plataforma.
+  - Email <string, Obrigatório>: E-mail do Usuário
+  - Senha <string, Obrigatório>: Senha de acesso do Usuário.
+
+- Resposta:
+  - Sucesso (201 Created):
+    ```
+    {
+	"$id": "1",
+	"id": 2,
+	"nomeCompleto": "Laura L. B. Rocha",
+	"nomeDeUsuario": "Laura0101",
+	"email": "laura@example.com",
+	"senha": "$2a$11$JAhewh7hoAL5i6AM7aDEuu1jMhi6aabu0oT5E7WzJ9sfhf4KFKaW2",
+	"favoritos": {
+		"$id": "2",
+		"$values": []
+	},
+	"comentarios": {
+		"$id": "3",
+		"$values": []
+	},
+	"links": {
+		"$id": "4",
+		"$values": []
+	}
+}
+    ```
   - Erro (400 Bad Request)
+    ```
+    "Já existe um usuário com esse Nome de Usuário."
+    ```
+
+    ```
+    "Já existe um usuário com esse E-mail."
+    ```
+    
+### Atualização de dados
+- Método: PUT
+- URL: /api/usuarios/{id}
+- Parâmetros:
+  - Id <int, chave Primária>: Identificador do Usuário.
+  - NomeCompleto <string, Obrigatório>: Nome do Usuário.
+  - NomeDeUsuario <string, Obrigatório>: Nome público do Usuário na plataforma.
+  - Email <string, Obrigatório>: E-mail do Usuário
+  - Senha <string, Obrigatório>: Senha de acesso do Usuário.
+
+- Resposta:
+  - Sucesso (204 No Content):  Sem corpo de resposta.
+    ```
+    ```
+  - Erro (400 Bad Request): Sem corpo de resposta.
+    ```
+    ```
+
+### Excluir Usuário
+- Método: DELETE
+- URL: /api/usuarios/{id}
+- Parâmetros:
+  - Id <int, chave Primária>: Identificador do Usuário.
+
+- Resposta:
+  - Sucesso (204 No Content):  Sem corpo de resposta.
+    ```
+    ```
+  - Erro (404 Not Found): Sem corpo de resposta.
     ```
     ```
 
