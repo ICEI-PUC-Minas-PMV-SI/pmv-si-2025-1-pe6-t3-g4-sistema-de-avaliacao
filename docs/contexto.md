@@ -25,7 +25,7 @@ De modo a atender ao público descrito, o objetivo deste trabalho é construir u
   - Filmes ou séries mais votados.
   + Espaço para que o usuário possa justificar seu voto por meio de texto.
 
-- Desenvolver um filtro de exibição para filmes por gênero e data de lançamento, elencando-os de acordo com filtros de avaliação.
+- Desenvolver um filtro de exibição para filmes por gênero, elencando-os de acordo com filtros de avaliação.
 
 
 ## Justificativa
@@ -74,12 +74,12 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
-|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA  |      
+|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA E CARLOS |      
 |RF-002| Permitir que os usuários criem e alterem listas de favoritos com as obras | ALTA       | PAOLLA  |
 |RF-003| Permitir que os usuários avaliem obras audiovisuias através de críticas e resenhas    | ALTA       | THIAGO  |
 |RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
-|RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  |
 
+<!-- |RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  | (Retirado por enquanto, já que o objetivo é um sistema de avaliações, não uma rede social)-->
 <!-- |RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  | -->
 
 ### Requisitos não Funcionais
@@ -129,16 +129,14 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
    
   - **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
    
-  - **Seguir e ser seguido por outros usuários**: Cria um ambiente propício para interações e novas amizades estreitando relações e o sentimento de comunidade.
-   
-  - **Sugestões de acordo com amigos seguidos**: São sugeridas obras de acordo com os perfis dos amigos que o usuário segue.
-   
   - **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
    
   - **Interface responsiva**: A ferramenta é compatível com os ambientes mobile e desktop.
 
   - **Proteção contra ataques**: Os dados e informações sensíveis dos usuários ficam protegidos.
 
+<!-- **Sugestões de acordo com amigos seguidos**: São sugeridas obras de acordo com os perfis dos amigos que o usuário segue. -->
+<!-- **Seguir e ser seguido por outros usuários**: Cria um ambiente propício para interações e novas amizades estreitando relações e o sentimento de comunidade. -->
 <!-- **Grande número de usuários ao mesmo tempo**: Possibilita vários usuários utilizarem os serviços ao mesmo tempo. -->
 <!-- **Disponibilidade 80% do tempo**: O sistema ficará estavel e sem interrupções a maior parte do tempo. -->
 
