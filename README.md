@@ -1,4 +1,4 @@
-# Sistema de Avaliação de Filmes
+# Sistema de Avaliação de Obras Cinematográficas
 
 `CURSO: Sistemas de Informação`
 
