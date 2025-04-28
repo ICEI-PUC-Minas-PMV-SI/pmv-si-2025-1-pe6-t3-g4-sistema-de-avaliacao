@@ -1,12 +1,21 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O objetivo central deste projeto é criar uma plataforma dedicada à organização e consulta de obras audiovisuais, na qual os Usuários poderão explorar críticas e notas atribuídas por outros espectadores. Isso possibilitará que eles tomem decisões mais alinhadas aos seus interesses individuais.
+A interface do Usuário será desenvolvida com foco em experiência intuitiva, utilizando tecnologias modernas para garantir dinamismo e responsividade. O design priorizará:
+
+- Navegação fluida, com páginas organizadas em seções claras.
+
+- Componentes interativos, como o filtro por gênero, busca inteligente e cards das obras com visualização rápida de avaliações médias.
+
+- Personalização visual, exibindo recomendações em destaque com base nas avaliações dos Usuários.
+
+- Integração em tempo real com a API, garantindo atualizações rápidas de reviews e notas.
 
 ## Projeto da Interface Web
 
-A interface web do projeto foi desenvolvida para ser a principal porta de entrada do usuário, proporcionando uma experiência intuitiva, agradável e alinhada com a temática cinematográfica. Com um design minimalista e objetivo, priorizamos a usabilidade e a imersão visual, incorporando elementos que remetem à atmosfera do cinema, como as cores características de baldes de pipoca e salas de projeção.
+A interface web do projeto foi desenvolvida para ser a principal porta de entrada do Usuário, proporcionando uma experiência intuitiva, agradável e alinhada com a temática cinematográfica. Com um design minimalista e objetivo, priorizamos a usabilidade e a imersão visual, incorporando elementos que remetem à atmosfera do cinema, como as cores características de baldes de pipoca e salas de projeção.
 
-### Wireframes
+## Wireframes
 
 ### Layout das Páginas
 A estrutura foi pensada para garantir navegação fluida e acesso rápido às principais funcionalidades.
@@ -16,77 +25,64 @@ A estrutura foi pensada para garantir navegação fluida e acesso rápido às pr
 Destaca os filmes disponíveis na aplicação para avalização, com um menu interativo que guia o Usuário até as outras páginas do site, incluindo uma aba específica para redirecionamentos relacionados ao Usuário.
 Possuí também uma barra de pesquisa para localização de obras audiovisuais.
 
-
 - **Painel do Usuário**:
 
-A aba do usuário possuí 4 opções de páginas para acesso do usuário, sendo elas:
-  + Perfil, referente a página de gestão dos dados do Usuário.
-  +  Avaliações, onde ficam as obras avaliadas por esse Usuário.
-  + Favoritados, onde ficam as obras favoritadas por esse Usuário.
-  + Perfis Seguidos, que dá acesso aos perfis seguidos pelo Usuário.
-  + Desconectar, opção para desconectar a conta da aplicação (Sign Out).
+A aba do Usuário possuí 4 opções de páginas para acesso do Usuário, sendo elas:
+
+  - Perfil, referente a página de gestão dos dados do Usuário.
+  - Avaliações, onde ficam as obras avaliadas por esse Usuário.
+  - Favoritados, onde ficam as obras favoritadas por esse Usuário.
+  - Desconectar, opção para desconectar a conta da aplicação (Sign Out).
 
 
 - **Criação Usuário**:
 
 Caso o usuário não possua uma conta, ele concegue acessar a página para cadastro pela aba Perfil, disponível no painel do Usuário, que também sera o caminho a ser seguido para se conectar (Login) a aplicação.
-Para criar um novo Usuário, é necessário fornecer um E-mail, uma senha, nome completo e nome de usuário (visível para os outros Usuários).
-
+Para criar um novo Usuário, é necessário fornecer um E-mail, uma senha, nome completo e nome de usuário (visível em suas avaliações para os outros Usuários).
 
 - **Login de Usuário**:
 
 Nessa página, o usuário consegue se conectar a aplicação para salvar suas informações (Obras avaliadas e/ou favoritadas), além de ter acesso a página de recuperação de senha.
 
-
 - **Nova Senha**:
 
 Caso o Usuário tenha se esquecido de sua senha inicial, é possível definir uma nova através do fornecimento do E-mail cadastrado e uma nova senha para cadastro.
-
 
 - **Gestão de Perfil do Usuário**:
 
 Mostra as informações cadastrais do Usuário (Nome completo, e-mail e nome de Usuário), além do histórico de obras avaliadas e/ou favoritadas, com a possibilidade de atualização dos dados ou exclusão da conta.
 
-
-- **Perfil Público do Usuário**:
-
-Nesta página o Usuário tem acesso ao "Nome de Usuário" de outras contas, assim como suas listas de obras avaliadas e favoritadas, sendo possível seguí-lo para acompanhar seu perfil.
-
-
-- **Perfis Seguidos**:
-
-O Usuário pode acompanhar seus perfis seguidos e suas listas criadas através dessa página, tendo como pesquisar por um perfil específico pela barra de pesquisa.
-
-
 - **Página das Obras Favoritas**:
 
 Grid responsivo com poster das obras e o botão de favoritar, que incluirá ela em sua Lista de Favoritados.
-
 
 - **Página das Obras Avaliadas**:
 
 Grid responsivo com poster e a nota média da obra, representada por estrelas, que permite uma nova avalização quando selecionada, direcionando o Usuário para um painel com informações da obra.
 
-
 - **Painel das Obras**:
 
- Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre. 
-
+Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre. 
 
 - **Lista de Favoritos**:
 
 Pelo menu superior é possível acessar a página das Listas de Favoritos, que mostra todas as listas criadas pelos Usuários.
 
-
 - **Obras Avaliadas**:
 
 Pelo perfil público de outros Usuários é possível acessar a página de Obras Avaliadas, que mostra as obras que foram avaliadas pelo Usuário selecionado.
-
 
  - **Página Filmes por gênero**:
 
 Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém às separando pelo seu gênero, possuindo também uma barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
 
+<!-- - **Perfil Público do Usuário**: -->
+
+<!-- Nesta página o Usuário tem acesso ao "Nome de Usuário" de outras contas, assim como suas listas de obras avaliadas e favoritadas, sendo possível seguí-lo para acompanhar seu perfil. -->
+
+<!-- - **Perfis Seguidos**: -->
+
+<!-- O Usuário pode acompanhar seus perfis seguidos e suas listas criadas através dessa página, tendo como pesquisar por um perfil específico pela barra de pesquisa. -->
 
 ### Design Visual
 
@@ -96,13 +92,14 @@ Tons de vermelho e bege, inspirados na coloração de pipocas e no ambiente acol
 
 Contrastes sutis com preto e azul escuro para evocar a sensação de telão e poltronas de cinema.
 
-Tipografia limpa e legível, com fontes Instrument Serif para melhor leitura em diferentes dispositivos.
+Tipografia limpa e legível, com a fonte Instrument Serif para melhor leitura em diferentes dispositivos.
 
 - Elementos Gráficos:
 
 Ícones simples (como lupa para referenciar a pesquisa e uma silhueta humana para representar a área do Usuário) usados de forma discreta para reforçar a identidade visual.
 
 Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cinematográficas.
+
 
 ## Fluxo de Dados
 
@@ -116,7 +113,8 @@ Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cin
 
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+Visual Studio Code, para desenvolvimento do Front-End da aplicação.
 
 ## Considerações de Segurança
 
