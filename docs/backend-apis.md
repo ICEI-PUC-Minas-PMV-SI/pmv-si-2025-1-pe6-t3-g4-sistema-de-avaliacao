@@ -1,6 +1,6 @@
 # APIs e Web Services
 
-O  foco do projeto é desenvolver uma aplicação de gerenciamento de filmes, onde os usuários terão acesso a comentários e avaliações de filmes, permitindo que alinhem suas escolhas de acordo com seus gostos pessoais. A API será responsável por fornecer os dados dos filmes, permitindo que os usuários registrem suas avaliações e recebam recomendações personalizadas, baseadas em suas preferências e interações com a plataforma.
+O  foco do projeto é desenvolver uma aplicação de gerenciamento de obras cinematográficas, onde os usuários terão acesso a comentários e avaliações das obras, permitindo que alinhem suas escolhas de acordo com seus gostos pessoais. A API será responsável por fornecer os dados das produções, permitindo que os usuários registrem suas avaliações e recebam recomendações personalizadas, baseadas em suas preferências e interações com a plataforma.
 
 
 ## Objetivos da API
@@ -63,9 +63,6 @@ FilmeId (int) – Chave estrangeira que referencia o filme comentado.
 Relacionamento:
 
 Comentário é uma entidade fraca associada a Usuário e Filme com cardinalidade muitos-para-um para ambos.
-
-![image](https://github.com/user-attachments/assets/049ecbc5-4478-4688-a91c-0240e4e19cc3)
-
 
 
 ⭐ Favorito
