@@ -64,6 +64,9 @@ Relacionamento:
 
 Comentário é uma entidade fraca associada a Usuário e Filme com cardinalidade muitos-para-um para ambos.
 
+![image](https://github.com/user-attachments/assets/049ecbc5-4478-4688-a91c-0240e4e19cc3)
+
+
 
 ⭐ Favorito
 
