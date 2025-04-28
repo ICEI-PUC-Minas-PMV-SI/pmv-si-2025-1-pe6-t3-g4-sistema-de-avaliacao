@@ -110,6 +110,12 @@ Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cin
 ![image](https://github.com/user-attachments/assets/ee4ab3ab-b2ef-4f13-b550-befe897335f1)
 
 
+## Diagrama Entidade-Relacionamento (ER)
+
+![image](https://github.com/user-attachments/assets/049ecbc5-4478-4688-a91c-0240e4e19cc3)
+
+
+## Diagrama de Fluxo
 
 
 ## Tecnologias Utilizadas
