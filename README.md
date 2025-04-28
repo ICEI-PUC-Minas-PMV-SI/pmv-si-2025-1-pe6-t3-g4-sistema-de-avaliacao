@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-O projeto consiste no desenvolvimento de um sistema de avaliação de filmes que permite aos usuários cadastrarem-se, acessarem uma lista de filmes e avaliarem cada título com notas e comentários. A plataforma calculará a média das avaliações e poderá oferecer recomendações personalizadas com base nas preferências dos usuários.
+O projeto consiste no desenvolvimento de um sistema de avaliação de obras audiovisuais que permite aos usuários cadastrarem-se, acessarem uma lista de filmes e avaliarem cada título com notas e comentários. A plataforma calculará a média das avaliações e poderá oferecer recomendações personalizadas com base nas preferências dos usuários.
 
 ## Integrantes
 
