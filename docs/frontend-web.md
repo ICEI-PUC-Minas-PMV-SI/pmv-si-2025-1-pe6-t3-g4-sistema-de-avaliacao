@@ -88,17 +88,27 @@ Semelhante a Home, destaca as obras disponíveis na aplicação para avalizaçã
 
 - Paleta de Cores:
 
-Tons de vermelho e bege, inspirados na coloração de pipocas e no ambiente acolhedor das salas de cinema.
+Para a paleta de cores escolhemos tons de vermelho, amarelo e bege, inspirados na coloração dos baldes de pipocas e no ambiente acolhedor das salas de cinema, e para gerar contrastes sutis definimos a cor preta e um azul escuro esverdeado, evocando a sensação de quando o telão é ligado, refletindo brilho nas poltronas e nas pessoas.
+Os códigos hexadecimais referente as cores utilizadas são:
+  - B0333B, para o vermelho.
+  - C87C0C, para o amarelo.
+  - F3D3AA, para o bege.
+  - 1A1E1F, para o preto.
+  - 4A6C6E, para o azul.
 
-Contrastes sutis com preto e azul escuro para evocar a sensação de telão e poltronas de cinema.
-
-Tipografia limpa e legível, com a fonte Instrument Serif para melhor leitura em diferentes dispositivos.
+- Tipografia 
+Para tipografia, focamos em algo limpo e legível, com a fonte Instrument Serif, para que seja acessível em diferentes dispositivos, tornando a leitura suave e direta.
 
 - Elementos Gráficos:
 
-Ícones simples (como lupa para referenciar a pesquisa e uma silhueta humana para representar a área do Usuário) usados de forma discreta para reforçar a identidade visual.
+Os Ícones utilizados são simples, usados de forma discreta para reforçar a identidade visual da plataforma e ao mesmo tempo se comunicar com Usuário através de elementos já conhecidos.
+São eles:
+- Lupa, para referenciar a barra de pesquisa.
+- Silhueta humana, para representar a área do Usuário.
+- Coração, para favoritar as obras.
+- Estrelas, para representação das notas atribuídas as obras.
 
-Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cinematográficas.
+Com efeitos de transição suaves entre as telas, simulando o fade-in e fade-out de projeções cinematográficas.
 
 
 ## Fluxo de Dados
@@ -114,13 +124,12 @@ Efeitos de transição suaves, simulando o fade-in e fade-out de projeções cin
 
 ![image](https://github.com/user-attachments/assets/049ecbc5-4478-4688-a91c-0240e4e19cc3)
 
-
-## Diagrama de Fluxo
-
-
 ## Tecnologias Utilizadas
 
-Visual Studio Code, para desenvolvimento do Front-End da aplicação.
+- Visual Studio Code, para desenvolvimento.
+- HTML, CSS e JavaScript, utilizados no Front-End.
+- Flaticon, para dowload dos ícones presentes na plataforma.
+
 
 ## Considerações de Segurança
 
