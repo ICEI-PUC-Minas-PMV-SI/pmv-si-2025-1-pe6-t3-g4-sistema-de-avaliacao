@@ -89,7 +89,9 @@ Semelhante a Home, destaca as obras disponíveis na aplicação para avalizaçã
 - Paleta de Cores:
 
 Para a paleta de cores escolhemos tons de vermelho, amarelo e bege, inspirados na coloração dos baldes de pipocas e no ambiente acolhedor das salas de cinema, e para gerar contrastes sutis definimos a cor preta e um azul escuro esverdeado, evocando a sensação de quando o telão é ligado, refletindo brilho nas poltronas e nas pessoas.
+
 Os códigos hexadecimais referente as cores utilizadas são:
+
   - B0333B, para o vermelho.
   - C87C0C, para o amarelo.
   - F3D3AA, para o bege.
@@ -133,17 +135,32 @@ Com efeitos de transição suaves entre as telas, simulando o fade-in e fade-out
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Garantir a segurança e privacidade dos dados na plataforma é prioritário, por isso o sistema foi desenvolvido com medidas robustas para proteger informações confidenciais dos usuários, sendo a seguinte fundamental:
+
+-Uso de requisições HTTPS para garantir comunicação segura: toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+Para a implantação utilizando Windows e os serviços da AWS, foram escolhidos os requisitos:
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+Requisitos de Hardware
+Máquina virtual vCPUs.
+
+Memória: Pelo menos 4 GB de RAM.
+
+Armazenamento de disco: 20GB.
+
+Requisitos de Software
+Sistema operacional: Microsoft Windows Server 2019.
+
+.NET SDK: .NET 8.
+
+Servidor Web: IIS (Windows).
+
+Banco de Dados: Amazon RDS(SQL Server).
+
+Hospedagem
+A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 ## Testes
 
@@ -157,4 +174,8 @@ Com efeitos de transição suaves entre as telas, simulando o fade-in e fade-out
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+**Código Fonte:**
+- https://github.com/Paollaks/meu-frontend.git
+
+**API de filmes para abastecimento do Banco de Dados:**
+- The Movie Database (TMDB), disponível em: https://developer.themoviedb.org/reference/intro/getting-started
