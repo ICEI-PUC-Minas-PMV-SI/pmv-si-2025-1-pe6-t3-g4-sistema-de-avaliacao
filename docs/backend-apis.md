@@ -294,16 +294,11 @@ Insomnia.
 
 Para garantir a integridade dos dados e a privacidade dos usuários na aplicação de gerenciamento de filmes, serão adotadas medidas essenciais de segurança. A plataforma foi pensada para oferecer uma experiência segura, protegendo informações sensíveis e controlando o acesso aos recursos de forma eficiente, em conformidade com diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD).
 
-As principais práticas implementadas incluem:
-
-- **Implementação de autenticação de usuário através de tokens JSON Web Token (JWT):** apenas usuários autenticados poderão acessar os recursos protegidos da API. O token é gerado no momento do login e validado em cada requisição subsequente.
+A principais prática implementada inclue:
 
 - **Senhas criptografadas e armazenamento seguro das credenciais de acesso:** todas as senhas serão protegidas com algoritmos de criptografia robustos, evitando o vazamento de informações sensíveis.
 
-- **Uso de requisições HTTPS para garantir comunicação segura:** toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
-
-- **Controle de acesso a certas operações da API com base no tipo de usuário:** funcionalidades como comentar, favoritar ou visualizar recomendações estarão disponíveis apenas conforme o nível de acesso de cada usuário, evitando usos indevidos da plataforma.
-
+<!-- - **Implementação de autenticação de usuário através de tokens JSON Web Token (JWT):** apenas usuários autenticados poderão acessar os recursos protegidos da API. O token é gerado no momento do login e validado em cada requisição subsequente. -->
 
 ## Implantação
 
@@ -376,8 +371,9 @@ Para validar a qualidade da aplicação e garantir uma boa experiencia para o Us
 - ASP.NET Core, disponível em: https://learn.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-6.0
 - Entity Framework Core, disponível em: https://learn.microsoft.com/pt-br/ef/core/
 
-**Bibliotecas:**
-- JSON Web Token, disponível em: https://www.npmjs.com/package/jsonwebtoken
-
 **Ferramentas de teste da API:**
 - Insomnia, disponível em: https://insomnia.rest/download
+
+<!-- 
+**Bibliotecas:**
+- JSON Web Token, disponível em: https://www.npmjs.com/package/jsonwebtoken -->
