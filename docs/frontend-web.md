@@ -154,7 +154,7 @@ Com efeitos de transição suaves entre as telas, simulando o fade-in e fade-out
 
 Garantir a segurança e privacidade dos dados na plataforma é prioritário, por isso o sistema foi desenvolvido com medidas robustas para proteger informações confidenciais dos usuários, sendo a seguinte fundamental:
 
--Uso de requisições HTTPS para garantir comunicação segura: toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
+- Uso de requisições HTTPS para garantir comunicação segura: toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
 
 ## Implantação
 
@@ -192,7 +192,7 @@ A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 # Referências
 
 **Código Fonte:**
-- https://github.com/Paollaks/meu-frontend.git
+- Front-end, disponível em: https://github.com/Paollaks/meu-frontend.git
 
 **API de filmes para abastecimento do Banco de Dados:**
 - The Movie Database (TMDB), disponível em: https://developer.themoviedb.org/reference/intro/getting-started
