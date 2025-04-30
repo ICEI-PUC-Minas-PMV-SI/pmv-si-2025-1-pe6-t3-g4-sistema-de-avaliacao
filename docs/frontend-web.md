@@ -25,6 +25,19 @@ A estrutura foi pensada para garantir navegação fluida e acesso rápido às pr
 Destaca os filmes disponíveis na aplicação para avalização, com um menu interativo que guia o Usuário até as outras páginas do site, incluindo uma aba específica para redirecionamentos relacionados ao Usuário.
 Possuí também uma barra de pesquisa para localização de obras audiovisuais.
 
+![image](https://github.com/user-attachments/assets/a27ac164-faf6-4e1e-9cfa-f781011a5547)
+
+ - **Página Filmes por gênero**:
+
+Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém às separando pelo seu gênero, possuindo também uma barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
+
+![image](https://github.com/user-attachments/assets/d0cefb69-187c-4fe6-8c6a-483afdf164e9)
+
+ - **Melhores Avaliados**:
+Nessa aba o Usuário tem acesso as obras que possuem as melhores notas registradas na plataforma, ou seja, as melhores obras de acordo com outros usuários.
+
+![image](https://github.com/user-attachments/assets/e7426fac-8e9c-4def-bb27-72a991e812e3)
+
 - **Painel do Usuário**:
 
 A aba do Usuário possuí 4 opções de páginas para acesso do Usuário, sendo elas:
@@ -34,47 +47,51 @@ A aba do Usuário possuí 4 opções de páginas para acesso do Usuário, sendo 
   - Favoritados, onde ficam as obras favoritadas por esse Usuário.
   - Desconectar, opção para desconectar a conta da aplicação (Sign Out).
 
+![image](https://github.com/user-attachments/assets/78059948-76dc-404a-befe-428e74c4fc6d)
 
 - **Criação Usuário**:
 
 Caso o usuário não possua uma conta, ele concegue acessar a página para cadastro pela aba Perfil, disponível no painel do Usuário, que também sera o caminho a ser seguido para se conectar (Login) a aplicação.
 Para criar um novo Usuário, é necessário fornecer um E-mail, uma senha, nome completo e nome de usuário (visível em suas avaliações para os outros Usuários).
 
+![image](https://github.com/user-attachments/assets/306aadd3-fc21-4c10-8701-bc82f80a7e00)
+
 - **Login de Usuário**:
 
 Nessa página, o usuário consegue se conectar a aplicação para salvar suas informações (Obras avaliadas e/ou favoritadas), além de ter acesso a página de recuperação de senha.
+
+![image](https://github.com/user-attachments/assets/2d5b1089-1390-4c01-84b9-112a4c2a86c4)
 
 - **Nova Senha**:
 
 Caso o Usuário tenha se esquecido de sua senha inicial, é possível definir uma nova através do fornecimento do E-mail cadastrado e uma nova senha para cadastro.
 
+![image](https://github.com/user-attachments/assets/6a2185d6-2953-4527-82ec-f909b3a9a6e8)
+
 - **Gestão de Perfil do Usuário**:
 
 Mostra as informações cadastrais do Usuário (Nome completo, e-mail e nome de Usuário), além do histórico de obras avaliadas e/ou favoritadas, com a possibilidade de atualização dos dados ou exclusão da conta.
 
+![image](https://github.com/user-attachments/assets/dfcc1cf8-ea6f-4310-a68e-3fccfa83b9fd)
+
 - **Página das Obras Favoritas**:
 
-Grid responsivo com poster das obras e o botão de favoritar, que incluirá ela em sua Lista de Favoritados.
+Página que inclui os posteres das obras e o botão de favorito, representando a Lista de Favoritados do Usuário.
+
+![image](https://github.com/user-attachments/assets/a4cd67c7-af0f-4694-93e6-63dd1fa2d73b)
 
 - **Página das Obras Avaliadas**:
 
-Grid responsivo com poster e a nota média da obra, representada por estrelas, que permite uma nova avalização quando selecionada, direcionando o Usuário para um painel com informações da obra.
+Página que inclui os posteres das obras e sua nota média, representada por estrelas, que permite vizualizar as obras avaliadas do Usuário.
+
+![image](https://github.com/user-attachments/assets/8f47daa4-a661-466b-bc99-5e4212d68990)
 
 - **Painel das Obras**:
 
-Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre. 
+Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre.
 
-- **Lista de Favoritos**:
+![image](https://github.com/user-attachments/assets/07606711-9935-4246-92b1-11d86fda77b3)
 
-Pelo menu superior é possível acessar a página das Listas de Favoritos, que mostra todas as listas criadas pelos Usuários.
-
-- **Obras Avaliadas**:
-
-Pelo perfil público de outros Usuários é possível acessar a página de Obras Avaliadas, que mostra as obras que foram avaliadas pelo Usuário selecionado.
-
- - **Página Filmes por gênero**:
-
-Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém às separando pelo seu gênero, possuindo também uma barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
 
 <!-- - **Perfil Público do Usuário**: -->
 
