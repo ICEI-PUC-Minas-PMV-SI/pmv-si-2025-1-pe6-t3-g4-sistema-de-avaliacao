@@ -75,12 +75,10 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
 |RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA E CARLOS |      
-|RF-002| Permitir que os usuários criem e alterem listas de favoritos com as obras | ALTA       | PAOLLA  |
-|RF-003| Permitir que os usuários avaliem obras audiovisuias através de críticas e resenhas    | ALTA       | THIAGO  |
+|RF-002| Permitir que os usuários favoritem obras | ALTA       | PAOLLA  |
+|RF-003| Permitir que os usuários avaliem obras audiovisuias através de comentários    | ALTA       | THIAGO  |
 |RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
 
-<!-- |RF-005| Permitir seguir outros usuários e visualizar suas listas e avaliações | BAIXA       | CARLOS  | (Retirado por enquanto, já que o objetivo é um sistema de avaliações, não uma rede social)-->
-<!-- |RF-008| Sistema de recomendações baseadas nos filmes assistidos e avaliados | MEDIA       | ASTOR  | -->
 
 ### Requisitos não Funcionais
 
