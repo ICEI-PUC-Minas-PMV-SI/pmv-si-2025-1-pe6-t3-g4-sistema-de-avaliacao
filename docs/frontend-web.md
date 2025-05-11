@@ -180,6 +180,36 @@ Hospedagem
 A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 ## Testes
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF004-01                                                               |
+| **Pré-condição**       | Filme “Matrix Reloaded” cadastrado                                        |
+| **Passos**             | 1. Abrir tela de busca<br>2. Digitar “Matrix”<br>3. Clicar em “Pesquisar” |
+| **Dados de Entrada**   | termo = “Matrix”                                                          |
+| **Resultado Esperado** | Lista com todos os filmes que têm “Matrix” no título                      |
+| **Resultado Obtido**   | Retornou todos os filmes que contem "Matrix no título"                    |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Tempo de resposta rápido.                                                 |
+
+Screenshot CT-RF004-01 
+![image](https://github.com/user-attachments/assets/adcfc87c-2791-461b-9025-dfe7fd6a07f3)
+
+| Campo                  | Valor                                                                                  |
+| ---------------------- | --------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF004-02                                                                                         |
+| **Pré-condição**       | Não existe nenhum filme com o termo “XYZ123” cadastrado no banco de dados                           |
+| **Passos**             | 1. Acessar a tela/API de busca<br>2. Digitar “XYZ123” no campo de busca<br>3. Clicar em “Pesquisar” |
+| **Dados de Entrada**   | termo = “XYZ123”                                                                                    |
+| **Resultado Esperado** | Retorno 200 OK com lista vazia (`[]`) e/ou mensagem “Erro ao carregar filmes”                       |
+| **Resultado Obtido**   | Retornou mensagem "Erro ao carregar filmes"                                                         |
+| **Status**             | Passou                                                                                              |
+| **Observações**        | Tempo de resposta rápido.                                                                            |
+
+Screenshot CT-RF004-02
+![image](https://github.com/user-attachments/assets/74e27565-aa04-43bd-9039-33a501442986)
+
+
+
 
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
