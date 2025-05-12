@@ -73,10 +73,10 @@ Nesta seção, estão listados os requisitos funcionais e não funcionais do sis
 
 |ID    | Descrição do Requisito                                      | Prioridade | Responsável |
 |------|-------------------------------------------------------------|------------|-------------|
-|RF-001| Permitir que os usuários se registrem na plataforma via login e senha        | ALTA       | LAURA E CARLOS |      
+|RF-001| Permitir que os usuários acessem a plataforma via login e senha        | ALTA       | LAURA E CARLOS |      
 |RF-002| Permitir que os usuários favoritem obras | ALTA       | PAOLLA  |
 |RF-003| Permitir que os usuários avaliem obras audiovisuias através de comentários    | ALTA       | THIAGO  |
-|RF-004| Permitir busca de obras através mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
+|RF-004| Permitir busca de obras através de mecanismo de pesquisa                                       | ALTA       | JUSSARA  |
 
 
 ### Requisitos não Funcionais
