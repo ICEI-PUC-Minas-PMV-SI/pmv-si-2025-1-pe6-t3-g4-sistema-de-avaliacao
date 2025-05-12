@@ -266,6 +266,20 @@ Comentario salvo com sucesso. ![image](https://github.com/user-attachments/asset
 ![image](https://github.com/user-attachments/assets/74e27565-aa04-43bd-9039-33a501442986)
 
 
+**Caso de teste : Requisito Não Funcional: Tempo de resposta médio abaixo de 2 segundos para operações comuns**
+| Campo                  | Valor                                                                                                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Caso de teste**      | CT-RNF-001                                                                                                                                                                     |
+| **Requisito**          | RNF-001 – Tempo de resposta médio abaixo de 2 s para operações comuns                                                                                                          |
+| **Pré-condição**       | API em staging com dados de filmes já populados                                                                                                                                |
+| **Passos**             | 1. Abrir DevTools → aba **Network**<br>2. Filtrar por XHR/Fetch e limpar histórico<br>3. Realizar 5 buscas iguais a “Matrix”<br>4. Anotar todos os valores da coluna **Time** |
+| **Métrica**            | Média < 2000 ms; nenhum request acima de 3000 ms                                                                                                                               |
+| **Resultado Esperado** | Média calculada abaixo de 2 s e 0 requisições acima de 3 s                                                                                                                     |
+| **Resultado Obtido**   | 1ª execução: 249 ms → 2ª execução: 165 ms → 3ª execução: 211 ms → 4ª execução: 186 ms → 5ª execução: 492 ms → Média final: 261 ms; máxima: 492 ms                                                                                             |
+| **Status**             | Passou                                                                                                                                                                         |
+| **Observações**        | JSON retornado em todas as requisições; sem erros de status; variação de tempo consistente.                                                              |
+
+
 # Referências
 
 **Código Fonte:**
