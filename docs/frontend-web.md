@@ -182,7 +182,7 @@ A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 ## Testes
 Testes realizados utilizando os retornos através do Network Panel das DevTools no navegador Chrome.
-Testes de integração de API e carga
+Testes de integração de API
 
 **Caso de teste : Requisito Funcional: Permitir que os usuários acessem a plataforma via login e senha**
 | Campo                  | Valor                                                           |
