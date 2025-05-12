@@ -155,6 +155,7 @@ Com efeitos de transição suaves entre as telas, simulando o fade-in e fade-out
 Garantir a segurança e privacidade dos dados na plataforma é prioritário, por isso o sistema foi desenvolvido com medidas robustas para proteger informações confidenciais dos usuários, sendo a seguinte fundamental:
 
 - Uso de requisições HTTPS para garantir comunicação segura: toda a troca de dados entre o frontend e a API será feita via protocolo HTTPS, assegurando a confidencialidade e integridade das informações transmitidas.
+- Uso de JWT para autenticação sem estado e garantia da integridade das requisições.
 
 ## Implantação
 
@@ -180,6 +181,62 @@ Hospedagem
 A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 ## Testes
+Testes realizados utilizando os retornos através do Network Panel das DevTools no navegador Chrome.
+Testes de integração de API e carga
+
+**Caso de teste : Requisito Funcional: Permitir que os usuários acessem a plataforma via login e senha**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF001-01                                                               |
+| **Pré-condição**       | Usuário previamente cadastrado com email = “paollaks@hotmail.com” e senha = “Ace456$”                                        |
+| **Passos**             | 1. Acessar a tela/API de login<br>2. Digitar email = “paollaks@hotmail.com”<br>3. Digitar senha = “Ace456$” |
+| **Dados de Entrada**   | 1. email = “paollaks@hotmail.com”<br>2. senha = “Ace456$”                                                          |
+| **Resultado Esperado** | 200 OK; retorno de JSON com token (JWT) e dados do usuário: id, nome e email                      |
+| **Resultado Obtido**   | Botão "entrar" não funcionou                     |
+| **Status**             | Falhou                                                                    |
+| **Observações**        | Checar onde está o erro.
+
+**Screenshot CT-RF001-01**
+![image](https://github.com/user-attachments/assets/f2bc78ea-2187-4bd2-b5d8-a7ceaf0874f1)
+
+
+
+**Caso de teste : Requisito Funcional: Permitir que os usuários favoritem obras**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF002-01                                                               |
+| **Pré-condição**       | Usuário autenticado (id = 1) e filme com id = 254 cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar seção/API de favoritos<br>2. Selecionar o filme com id = 254<br>3. Clicar em “Adicionar aos Favoritos” |
+| **Dados de Entrada**   | 1. usuarioId = 5<br>2. filmeId = 254                                                          |
+| **Resultado Esperado** | 201 Created; retorno de JSON com campos: idFavorito, usuarioId = 1, filmeId = 254                      |
+| **Resultado Obtido**   | Retornou JSON com idFavorito = 1, usuarioId = 1, filmeId = 254                     |
+| **Status**             | Passou                                                                    |
+| **Observações**        | confirmação visual no front-end, presença do favorito na lista do usuário.
+
+**Screenshot CT-RF002-1**
+Filme adicionado na tela de "Favoritados" do usuário. ![image](https://github.com/user-attachments/assets/fbba4642-a200-4c2f-afcf-6e90069d18f8)
+
+
+
+**Caso de teste : Requisito Funcional: Permitir que os usuários avaliem obras audiovisuias através de comentários.**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF003-01                                                               |
+| **Pré-condição**       | Usuário autenticado e filme com id = 986056 cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar a tela/API de comentários do filme<br>2. Preencher campo texto com comentário válido<br>3. Clicar em “Salvar” |
+| **Dados de Entrada**   | 1. usuarioId = 1<br>2. filmeId = 986056<br>3. texto = “Muito bom!”                                                          |
+| **Resultado Esperado** | 201 Created; retorno de JSON com campos id, usuarioId, filmeId e texto                      |
+| **Resultado Obtido**   | Retornou JSON com id = 3, usuarioId = 1, filmeId = 986056 e texto = “Muito bom!”                    |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Comentário aparece imediatamente na lista de comentários do filme; tempo de resposta < 500 ms.                           |
+
+**Screenshots CT-RF003-01**
+Fazendo o comentário. ![image](https://github.com/user-attachments/assets/ccd381a5-d9e9-4af0-865e-a1c1b76cb3b1)
+Comentario salvo com sucesso. ![image](https://github.com/user-attachments/assets/206fe5b9-3c4a-4514-97b4-ef69c97a4819)
+
+
+
+**Caso de teste : Requisito Funcional: Permitir busca de obras através de mecanismo de pesquisa.**
 | Campo                  | Valor                                                           |
 | ---------------------- | ------------------------------------------------------------------------- |
 | **Caso de teste**      | CT-RF004-01                                                               |
@@ -189,9 +246,9 @@ A hospedagem será feita pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 | **Resultado Esperado** | Lista com todos os filmes que têm “Matrix” no título                      |
 | **Resultado Obtido**   | Retornou todos os filmes que contem "Matrix no título"                    |
 | **Status**             | Passou                                                                    |
-| **Observações**        | Tempo de resposta rápido.                                                 |
+| **Observações**        | Filme aparece imediatamente na tela. Tempo de resposta < 214 ms.                                                 |
 
-Screenshot CT-RF004-01 
+**Screenshot CT-RF004-01** 
 ![image](https://github.com/user-attachments/assets/adcfc87c-2791-461b-9025-dfe7fd6a07f3)
 
 | Campo                  | Valor                                                                                  |
@@ -203,9 +260,9 @@ Screenshot CT-RF004-01
 | **Resultado Esperado** | Retorno 200 OK com lista vazia (`[]`) e/ou mensagem “Erro ao carregar filmes”                       |
 | **Resultado Obtido**   | Retornou mensagem "Erro ao carregar filmes"                                                         |
 | **Status**             | Passou                                                                                              |
-| **Observações**        | Tempo de resposta rápido.                                                                            |
+| **Observações**        | Tempo de resposta rápido.                                                                           |
 
-Screenshot CT-RF004-02
+**Screenshot CT-RF004-02**
 ![image](https://github.com/user-attachments/assets/74e27565-aa04-43bd-9039-33a501442986)
 
 
