@@ -25,18 +25,18 @@ A estrutura foi pensada para garantir navegação fluida e acesso rápido às pr
 Destaca os filmes disponíveis na aplicação para avalização, com um menu interativo que guia o Usuário até as outras páginas do site, incluindo uma aba específica para redirecionamentos relacionados ao Usuário.
 Possuí também uma barra de pesquisa para localização de obras audiovisuais.
 
-![image](https://github.com/user-attachments/assets/a27ac164-faf6-4e1e-9cfa-f781011a5547)
+![image](https://github.com/user-attachments/assets/2f1132a4-e796-4242-a5dc-5aae3721102d)
 
  - **Página Filmes por gênero**:
 
 Semelhante a Home, destaca as obras disponíveis na aplicação para avalização, porém às separando pelo seu gênero, possuindo também uma barra de pesquisa para localização de obras audiovisuais e/ou gêneros específicos.
 
-![image](https://github.com/user-attachments/assets/d0cefb69-187c-4fe6-8c6a-483afdf164e9)
+![image](https://github.com/user-attachments/assets/010535af-89d6-45fb-91cd-677b374c9a98)
 
  - **Melhores Avaliados**:
-Nessa aba o Usuário tem acesso as obras que possuem as melhores notas registradas na plataforma, ou seja, as melhores obras de acordo com outros usuários.
+Nessa aba o Usuário tem acesso as obras que possuem as melhores notas registradas na plataforma, ou seja, as melhores obras de acordo com outros Usuários do TMDB.
 
-![image](https://github.com/user-attachments/assets/e7426fac-8e9c-4def-bb27-72a991e812e3)
+![image](https://github.com/user-attachments/assets/17385c8b-0ac6-44f7-ab12-68529a3f6166)
 
 - **Painel do Usuário**:
 
@@ -54,37 +54,37 @@ A aba do Usuário possuí 4 opções de páginas para acesso do Usuário, sendo 
 Caso o usuário não possua uma conta, ele concegue acessar a página para cadastro pela aba Perfil, disponível no painel do Usuário, que também sera o caminho a ser seguido para se conectar (Login) a aplicação.
 Para criar um novo Usuário, é necessário fornecer um E-mail, uma senha, nome completo e nome de usuário (visível em suas avaliações para os outros Usuários).
 
-![image](https://github.com/user-attachments/assets/306aadd3-fc21-4c10-8701-bc82f80a7e00)
+![image](https://github.com/user-attachments/assets/6c1c290d-d316-4df7-9b56-0de2cdbe0cb5)
 
 - **Login de Usuário**:
 
 Nessa página, o usuário consegue se conectar a aplicação para salvar suas informações (Obras avaliadas e/ou favoritadas), além de ter acesso a página de recuperação de senha.
 
-![image](https://github.com/user-attachments/assets/2d5b1089-1390-4c01-84b9-112a4c2a86c4)
+![image](https://github.com/user-attachments/assets/71c8716a-719c-46f4-b3b4-d0d9792ca602)
 
 - **Nova Senha**:
 
 Caso o Usuário tenha se esquecido de sua senha inicial, é possível definir uma nova através do fornecimento do E-mail cadastrado e uma nova senha para cadastro.
 
-![image](https://github.com/user-attachments/assets/6a2185d6-2953-4527-82ec-f909b3a9a6e8)
+![image](https://github.com/user-attachments/assets/3c42a78d-9605-4c00-8fd4-04d2d820d8c2)
 
 - **Gestão de Perfil do Usuário**:
 
 Mostra as informações cadastrais do Usuário (Nome completo, e-mail e nome de Usuário), além do histórico de obras avaliadas e/ou favoritadas, com a possibilidade de atualização dos dados ou exclusão da conta.
 
-![image](https://github.com/user-attachments/assets/dfcc1cf8-ea6f-4310-a68e-3fccfa83b9fd)
+![image](https://github.com/user-attachments/assets/95c8def2-d313-4eb9-ae07-cb1a54219e8c)
 
 - **Página das Obras Favoritas**:
 
 Página que inclui os posteres das obras e o botão de favorito, representando a Lista de Favoritados do Usuário.
 
-![image](https://github.com/user-attachments/assets/a4cd67c7-af0f-4694-93e6-63dd1fa2d73b)
+![image](https://github.com/user-attachments/assets/a6bb363d-c949-4859-a219-abd3aa888974)
 
 - **Página das Obras Avaliadas**:
 
 Página que inclui os posteres das obras e sua nota média, representada por estrelas, que permite vizualizar as obras avaliadas do Usuário.
 
-![image](https://github.com/user-attachments/assets/8f47daa4-a661-466b-bc99-5e4212d68990)
+![image](https://github.com/user-attachments/assets/bdb01064-debc-419b-8a68-11a4e8878231)
 
 - **Painel das Obras**:
 
@@ -121,7 +121,9 @@ Para tipografia, focamos em algo limpo e legível, com a fonte Instrument Serif,
 - Elementos Gráficos:
 
 Os Ícones utilizados são simples, usados de forma discreta para reforçar a identidade visual da plataforma e ao mesmo tempo se comunicar com Usuário através de elementos já conhecidos.
+
 São eles:
+- Logo, símbolo da aplicação.
 - Lupa, para referenciar a barra de pesquisa.
 - Silhueta humana, para representar a área do Usuário.
 - Coração, para favoritar as obras.
