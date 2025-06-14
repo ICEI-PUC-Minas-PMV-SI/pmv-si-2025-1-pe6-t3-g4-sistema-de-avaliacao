@@ -104,8 +104,11 @@ São eles:
 Microinterações: Efeitos de sombra suave no fundo ao selecionar um filme, reminiscentes de refletores de cinema.
 
 ## Fluxo de Dados
-
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+![image](https://github.com/user-attachments/assets/9bd199aa-f1a6-464c-98aa-9236b97be3c5)
+![image](https://github.com/user-attachments/assets/852bbd65-1968-4e8e-b4a0-cc37bb7fcac5)
+![image](https://github.com/user-attachments/assets/545bfeaa-b0d5-4d5e-b1d4-cb601f36860b)
+![image](https://github.com/user-attachments/assets/6cd678fc-e0e3-49e1-aece-c8d74376f05d)
+![image](https://github.com/user-attachments/assets/3ad5eaac-f4f0-41b1-8d6b-d6ba4529640e)
 
 ## Tecnologias Utilizadas
 
