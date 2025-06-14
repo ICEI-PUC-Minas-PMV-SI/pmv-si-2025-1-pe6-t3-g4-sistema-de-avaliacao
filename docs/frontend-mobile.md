@@ -152,7 +152,7 @@ Microinterações: Efeitos de sombra suave no fundo ao selecionar um filme, remi
 
 # Sites
 
--https://pucminas.instructure.com/courses/155666
+- https://pucminas.instructure.com/courses/155666
 - https://docs.expo.dev/
 - https://expo.dev/
 - https://reactnative.dev/docs/getting-started
