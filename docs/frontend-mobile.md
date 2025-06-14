@@ -1,9 +1,26 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Este projeto tem como objetivo desenvolver a interface móvel da aplicação de filmes, proporcionando uma experiência intuitiva e agradável para os usuários. A aplicação permite visualizar os filmes mais bem avaliados, gerenciar usuários e interagir com o conteúdo de forma prática por meio de um aplicativo desenvolvido em React Native com Expo.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface móvel da aplicação foi projetada com foco na simplicidade, elegância e usabilidade. Inspirada no design retrô das salas de cinema, a interface utiliza um fundo em verde escuro para transmitir uma atmosfera imersiva, com elementos visuais contrastantes, como cards arredondados com fundo bege, que destacam as informações principais de cada filme.
+
+A navegação foi planejada para ser intuitiva, com menus claros, botões acessíveis e interação fluida. O layout se adapta bem a diferentes tamanhos de tela, garantindo uma boa experiência tanto em celulares menores quanto em dispositivos com telas maiores.
+
+As páginas incluem:
+
+Tela inicial com os filmes mais bem avaliados;
+
+Tela de gestão de usuários (cadastro, listagem e remoção);
+
+Navegação por categorias/gêneros;
+
+Barra de pesquisa e filtros.
+
+
+A identidade visual visa unir funcionalidade e apelo estético, proporcionando uma experiência agradável tanto para usuários ocasionais quanto para cinéfilos assíduos.
+
+
 
 ### Wireframes
 Os Wireframes do front-end móvel da aplicação foram criados se baseando nas páginas Web, com o foco na experiência do usuário e na portabilidade oferecida pelos dispositivos móveis.
