@@ -120,13 +120,23 @@ Microinterações: Efeitos de sombra suave no fundo ao selecionar um filme, remi
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+# Requisitos de Software
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+1. Frontend (Reactive Native)
+   - Expo CLI ou React Native CLI para gerar builds de Android e iOS.
+   - Node.js (versão 16 ou superior).
+   - Configuração de CORS no backend para permitir requisições no frontend.
+  
+2. Requisitos de Hardware (Reactive Native)
+   - Para Android: Máquina com Android Studio instalado.
+   - Para iOS: Mác com Xcode instalado (necessário para builds de iOS).
+
+# Plataforma de hospedagem
+
+  - Para a hospedagem mobile utilizaremos o provedor de Nuvem da AWS.
+  - Servidor dedicado (AWS EC2).
+  - Amazon RDS para gerenciar o banco de dados SQL server.
+   
 
 ## Testes
 
