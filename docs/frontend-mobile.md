@@ -150,4 +150,12 @@ Microinterações: Efeitos de sombra suave no fundo ao selecionar um filme, remi
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+# Sites
+
+-https://pucminas.instructure.com/courses/155666
+- https://docs.expo.dev/
+- https://expo.dev/
+- https://reactnative.dev/docs/getting-started
+- https://m3.material.io/get-started
+- https://www.w3schools.com/
+- https://docs.aws.amazon.com/
