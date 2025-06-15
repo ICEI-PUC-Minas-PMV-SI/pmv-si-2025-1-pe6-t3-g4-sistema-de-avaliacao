@@ -178,6 +178,7 @@ Para garantir a integridade dos dados e a privacidade dos usuários na aplicaç�
    
 
 ## Testes
+## Testes
 Caso de Teste 1 – Tempo de resposta
 | Campo                  | Valor                                                                                                                                                                 |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -192,6 +193,7 @@ Caso de Teste 1 – Tempo de resposta
 | **Observações**        | JSON retornado em todas as requisições; sem erros de status; variação de tempo consistente.                                             
 
 Screenshot Caso de Teste 1
+
 ![image](https://github.com/user-attachments/assets/14907b1b-ab1d-45ca-872a-51342bbb2701)
 
 Caso de Teste 2 – Favoritar Filme
@@ -225,8 +227,10 @@ Caso de Teste 3 – Filme não encontrado por nome
 | **Resultado Esperado** | Mensagem tipo “Erro ao carregar filme. Nenhum resultado encontrado.” visível na tela                                                                              |
 | **Resultado Obtido**   | Mensagem exibida corretamente abaixo do campo de busca                                                                                                                   |
 | **Status**             | Passou                                                                                                                                                                   |
-| **Observações**        | Nenhum erro de requisição na aba Network; resposta vazia tratada corretamente na interface.                                                                              
+| **Observações**        | Nenhum erro de requisição na aba Network; resposta vazia tratada corretamente na interface.                                                                          
+
 Screenshot Caso de Teste 3
+
 ![image](https://github.com/user-attachments/assets/3104111b-4fb6-45be-a991-91344c83900c)
 
 Caso de Teste 4 – Comentário em Filme
@@ -243,6 +247,7 @@ Caso de Teste 4 – Comentário em Filme
 | **Observações**        | API respondeu com status 200; feedback visual positivo.                                                                              |
 
 Screenshots Caso de teste 4
+
 ![image](https://github.com/user-attachments/assets/2eb9b93d-87f9-498d-98e5-8ac57b41347b)
 ![image](https://github.com/user-attachments/assets/de3df03b-56b4-4e2c-97c9-a62ba3b5586c)
 
@@ -260,10 +265,123 @@ Caso de Teste 5 – Busca por Filme
 | **Observações**        | Tempo de resposta 352 ms; sem erros na Network.                                                                       |
 
 Screenshot Caso de teste 5
+
 ![image](https://github.com/user-attachments/assets/0ad5b238-1d58-4251-9dc1-f59173190204)
 
+Caso de Teste 6 – Cadastro de Usuário
+
+| Campo                  | Valor                                                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-006                                                                                                                                       |
+| **Requisito**          | RF-001 – Sistema deve permitir que novos usuários se cadastrem                                                                                    |
+| **Pré-condição**       | App aberto na tela de cadastro                                                                                                                    |
+| **Passos**             | 1. Preencher nome completo, e-mail, senha e nome de usuário<br>2. Clicar em "Cadastrar"<br>3. Verificar se o redirecionamento para login acontece |
+| **Métrica**            | Cadastro realizado e sem erros                                                                                                                    |
+| **Resultado Esperado** | Redirecionamento para tela de login com mensagem de sucesso                                                                                       |
+| **Resultado Obtido**   | Cadastro realizado e redirecionado corretamente                                                                                                   |
+| **Status**             | Passou                                                                                                                                            |
+| **Observações**        | Validação de campos e API funcionando normalmente.       
+
+Screenshots Teste 6
+
+![Captura de tela 2025-06-15 180729](https://github.com/user-attachments/assets/e6022666-8be3-4ab4-a457-6493b19674cf)
+![Captura de tela 2025-06-15 181031](https://github.com/user-attachments/assets/f748f52f-2557-4e54-b39f-b4409fe92eb9)
+
+Caso de Teste 7 – Efetuar Login
+| Campo                  | Valor                                                                                                           |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-007                                                                                                     |
+| **Requisito**          | RF-002 – Usuário deve conseguir fazer login                                                                     |
+| **Pré-condição**       | Conta já cadastrada                                                                                             |
+| **Passos**             | 1. Inserir e-mail e senha válidos<br>2. Clicar em "Entrar"<br>3. Verificar se redireciona para a página inicial |
+| **Métrica**            | Redirecionamento + persistência de sessão                                                                       |
+| **Resultado Esperado** | Login com sucesso e sessão iniciada                                                                             |
+| **Resultado Obtido**   | Login efetuado e dados salvos com sucesso                                                                       |
+| **Status**             | Passou                                                                                                          |
+| **Observações**        | Cookies/token armazenados; sem erros visuais.                                                                   |
+
+![image](https://github.com/user-attachments/assets/d1053bce-8196-47f5-be52-f68c834cf431)
+
+Caso de Teste 8 – Login com senha incorreta
+| Campo                  | Valor                                                                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-008                                                                                                                                                       |
+| **Requisito**          | RF-002 – O sistema deve informar o usuário quando o login falhar por dados incorretos                                                                             |
+| **Pré-condição**       | Usuário já cadastrado no sistema                                                                                                                                  |
+| **Passos**             | 1. Acessar a tela de login<br>2. Inserir e-mail correto<br>3. Inserir senha incorreta<br>4. Clicar em "Entrar"<br>5. Observar a interface                         |
+| **Métrica**            | O sistema deve exibir mensagem clara como "Senha incorreta" ou "Usuário ou senha inválidos"                                                                       |
+| **Resultado Esperado** | Mensagem de erro exibida, impedindo acesso                                                                                                                        |
+| **Resultado Obtido**   | Nenhuma mensagem é exibida; tela permanece inalterada mesmo após clicar em "Entrar"                                                                               |
+| **Status**             | Falhou                                                                                                                                                        |
+| **Observações**        | A requisição de login retorna erro (401) na aba Network, mas a interface não trata ou exibe esse retorno ao usuário. Usuário fica sem saber se houve erro ou não. |
+
+Caso de Teste 9 – Redefinir senha
+| Campo                  | Valor                                                                                                                                                                            |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-009                                                                                                                                                                      |
+| **Requisito**          | RF-003 – O sistema deve permitir redefinir a senha do usuário diretamente pelo site                                                                                              |
+| **Pré-condição**       | Usuário acessa a tela "Redefinir Senha" com o campo de nova senha disponível                                                                                                     |
+| **Passos**             | 1. Acessar a tela "Redefinir Senha"<br>2. Preencher o campo "Nova Senha" com um valor válido<br>3. Clicar no botão "Redefinir Senha"<br>4. Observar o comportamento da interface |
+| **Métrica**            | Sistema deve exibir uma mensagem de sucesso ou erro, e redirecionar ou bloquear ações conforme necessário                                                                        |
+| **Resultado Esperado** | Mensagem do tipo “Senha redefinida com sucesso” ou “Erro ao redefinir senha” deve ser exibida                                                                                    |
+| **Resultado Obtido**   | Nada acontece visualmente após o clique; nenhum feedback, redirecionamento ou mensagem aparece na tela                                                                           |
+| **Status**             | **Falhou**                                                                                                                                                                       |
+| **Observações**        | A requisição possivelmente não está sendo disparada ou o retorno não está sendo tratado. A ausência de resposta deixa o usuário sem saber se a senha foi redefinida.         
+
+Caso de Teste 10 – Edição de Perfil
+
+| Campo                  | Valor                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-010                                                                                                                      |
+| **Requisito**          | RF-004 – Usuário pode editar nome completo e nome de usuário                                                                      |
+| **Pré-condição**       | Usuário logado na tela de perfil                                                                                                  |
+| **Passos**             | 1. Alterar os campos de nome e nome de usuário<br>2. Clicar em "Salvar"<br>3. Verificar se valores foram atualizados na interface |
+| **Métrica**            | Dados atualizados corretamente e persistência local/na API                                                                        |
+| **Resultado Esperado** | Feedback de sucesso + dados atualizados                                                                                           |
+| **Resultado Obtido**   | Dados alterados e atualizados na tela                                                                                             |
+| **Status**             | Passou                                                                                                                            |
+| **Observações**        | API respondeu com 200; edição refletida sem recarregar a tela.                                                                    |
 
 
+![Captura de tela 2025-06-15 182610](https://github.com/user-attachments/assets/ccc86398-140e-4006-b2be-92a0ee6ddc59)
+![image](https://github.com/user-attachments/assets/778ab7d6-1d51-47c4-a42b-6ea8ba40e921)
+
+
+Caso de Teste 11 – Buscar por Gênero
+| Campo                  | Valor                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-011                                                                                         |
+| **Requisito**          | RF-008 – Sistema permite listar filmes por gênero                                                   |
+| **Pré-condição**       | Tela de "Filmes por Gênero" acessada                                                                |
+| **Passos**             | 1. Expandir uma seção de gênero (ex: Ação)<br>2. Verificar se os filmes daquele gênero são exibidos |
+| **Métrica**            | Lista deve aparecer em até 2 segundos                                                               |
+| **Resultado Esperado** | Filmes relacionados ao gênero exibidos corretamente                                                 |
+| **Resultado Obtido**   | Listagem por gênero funcional e precisa                                                             |
+| **Status**             | Passou                                                                                              |
+| **Observações**        | Seção recolhível está funcionando corretamente também.                                              |
+
+Screenshot caso de teste 11
+
+![image](https://github.com/user-attachments/assets/dcbc7f4c-0932-427f-b295-28323d1fbd85)
+![image](https://github.com/user-attachments/assets/c059615f-4bc8-4791-812e-f33ed86f5077)
+
+Caso de Teste 12 – Ver Melhores Avaliados
+| Campo                  | Valor                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-012                                                                                          |
+| **Requisito**          | RF-009 – Sistema mostra filmes com melhores notas                                                    |
+| **Pré-condição**       | Tela específica com essa listagem                                                         |
+| **Passos**             | 1. Verificar se a seção "Melhores Avaliados" está visível<br>2. Conferir as notas e títulos exibidos |
+| **Métrica**            | Lista ordenada por nota decrescente                                                                  |
+| **Resultado Esperado** | Filmes com maiores notas no topo                                                                     |
+| **Resultado Obtido**   | Lista em ordem correta                                                                               |
+| **Status**             | Passou                                                                                               |
+| **Observações**        | Notas e valores renderizados corretamente.                                                        |
+
+Screenshot caso de teste 12
+
+![image](https://github.com/user-attachments/assets/4c098274-4a41-427f-8a28-8b1753d1d135)
+![Captura de tela 2025-06-15 190455](https://github.com/user-attachments/assets/8a565dfc-5b24-41f7-9051-4519ba33dbbb)
 
 
 # Referências
