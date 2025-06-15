@@ -129,7 +129,23 @@ Microinterações: Efeitos de sombra suave no fundo ao selecionar um filme, remi
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+<!--[Lista das tecnologias principais que serão utilizadas no projeto.] -->
+### Introdução
+
+Para o desenvolvimento deste projeto mobile, nosso objetivo foi criar uma aplicação moderna, funcional e de fácil utilização. Adotamos ferramentas e tecnologias que proporcionam uma implementação eficiente, com foco na usabilidade e na experiência do usuário.
+
+### Design da Interface
+
+- **Figma**: Utilizado para elaborar os protótipos e definir a estrutura visual da aplicação. Essa ferramenta colaborativa permitiu uma organização clara das telas e uma melhor visualização do fluxo do aplicativo.
+
+### Tecnologias
+
+- **[Expo](https://snack.expo.dev/)**: Plataforma utilizada para facilitar o desenvolvimento e teste da aplicação mobile. O Expo permitiu criar e testar o aplicativo rapidamente, diretamente pelo navegador ou dispositivo, sem a necessidade de configurações nativas complexas.
+
+- **JavaScript**: Linguagem principal usada na construção da aplicação, responsável tanto pela lógica de negócio quanto pela criação dos elementos da interface. Sua sintaxe simples e versatilidade tornam o processo de desenvolvimento mais ágil.
+
+- **React Native**: Framework utilizado para desenvolver o aplicativo mobile. Ele permite criar aplicações nativas utilizando JavaScript e a biblioteca React. O código é compilado para componentes nativos reais, o que garante desempenho e aparência equivalentes aos apps desenvolvidos de forma nativa.
+<!-- Esta seção ainda pode ser expandida com bibliotecas como Axios ou Context API -->
 
 ## Considerações de Segurança
 
