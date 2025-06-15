@@ -85,7 +85,7 @@ Página que inclui os posteres das obras e o botão de favorito, representando a
 ![image](https://github.com/user-attachments/assets/c59b7aa5-8505-452e-832c-62a66c1dbf4f)
 
 - **Página das Obras Avaliadas**:
-Página que inclui os posteres das obras e sua nota média, representada por estrelas, que permite vizualizar as obras avaliadas do Usuário.
+Página que inclui os cards das obras comentadas pelo usuário. Nessa página é possível pesquisar os filmes comentados por meio do campo de busca. Também é possível, ao clicar em um card, editar ou excluir o comentário. 
 
 ![image](https://github.com/user-attachments/assets/9431423c-8d6f-43eb-867f-0b1340dfe062)
 
