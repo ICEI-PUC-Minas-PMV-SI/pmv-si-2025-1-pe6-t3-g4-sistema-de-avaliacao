@@ -172,14 +172,93 @@ Para o desenvolvimento deste projeto mobile, nosso objetivo foi criar uma aplica
    
 
 ## Testes
+Caso de Teste 1 – Tempo de resposta
+| Campo                  | Valor                                                                                                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RNF-001                                                                                                                                                            |
+| **Requisito**          | RNF-001 – Tempo de resposta médio abaixo de 2 s para operações comuns                                                                                                 |
+| **Pré-condição**       | API em staging com dados de filmes já populados                                                                                                                       |
+| **Passos**             | 1. Abrir DevTools → aba Network<br>2. Filtrar por XHR/Fetch e limpar histórico<br>3. Realizar 5 buscas iguais a “Lilo & Stitch”<br>4. Anotar todos os valores da coluna Time |
+| **Métrica**            | Média < 2000 ms; nenhum request acima de 3000 ms                                                                                                                      |
+| **Resultado Esperado** | Média calculada abaixo de 2 s e 0 requisições acima de 3 s                                                                                                            |
+| **Resultado Obtido**   | 1ª: 298 ms → 2ª: 416 ms → 3ª: 173 ms → 4ª: 309 ms → 5ª: 262 ms → Média: 291 ms; Máxima: 416 ms                                                                        |
+| **Status**             | Passou                                                                                                                                                                |
+| **Observações**        | JSON retornado em todas as requisições; sem erros de status; variação de tempo consistente.                                             
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+Screenshot Caso de Teste 1
+![image](https://github.com/user-attachments/assets/14907b1b-ab1d-45ca-872a-51342bbb2701)
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Caso de Teste 2 – Favoritar Filme
+| Campo                  | Valor                                                                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-002                                                                                                                           |
+| **Requisito**          | RF-005 – Usuário pode favoritar/desfavoritar um filme                                                                                 |
+| **Pré-condição**       | Usuário autenticado no app; filme visível na tela                                                                                     |
+| **Passos**             | 1. Abrir app na Home<br>2. Clicar no botão de coração do filme<br>3. Reabrir modal e verificar estado<br>4. Repetir para desfavoritar |
+| **Métrica**            | Ícone deve mudar imediatamente; filme salvo em favoritos                                                                              |
+| **Resultado Esperado** | Estado do ícone muda corretamente; ação persistida localmente ou na API                                                               |
+| **Resultado Obtido**   | Ícone mudou corretamente ao favoritar/desfavoritar; porém, o filme não apareceu na tela de "Favoritos"                                 |
+| **Status**             | Falhou                                                                                                                              |
+| **Observações**        | A UI responde à ação, mas o estado não está sendo persistido corretamente (possível falha na API ou na renderização dos favoritos).   |
+
+Screenshots Caso de teste 2
+
+![image](https://github.com/user-attachments/assets/25b5f2d0-ec5b-4a7a-a134-2e1d3f3eaf98)
+![image](https://github.com/user-attachments/assets/ac3cd3d2-fd14-479c-9b27-6701d0ab7168)
+
+
+
+Caso de Teste 3 – Filme não encontrado por nome
+| Campo                  | Valor                                                                                                                                                                    |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Caso de teste**      | CT-FUNC-003                                                                                                                                                              |
+| **Requisito**          | RF-002 – Sistema deve informar quando nenhum filme é encontrado por nome                                                                                                 |
+| **Pré-condição**       | Aplicação iniciada com conexão ativa à API                                                                                                                               |
+| **Passos**             | 1. Acessar a Home ou tela de busca<br>2. Digitar um termo inexistente, como “abcd78&”<br>3. Pressionar Enter ou tocar na lupa<br>4. Observar a resposta na interface |
+| **Métrica**            | O app deve exibir uma mensagem clara de "Erro ao carregar filme. Nenhum resultado encontrado."                                                                                            |
+| **Resultado Esperado** | Mensagem tipo “Erro ao carregar filme. Nenhum resultado encontrado.” visível na tela                                                                              |
+| **Resultado Obtido**   | Mensagem exibida corretamente abaixo do campo de busca                                                                                                                   |
+| **Status**             | Passou                                                                                                                                                                   |
+| **Observações**        | Nenhum erro de requisição na aba Network; resposta vazia tratada corretamente na interface.                                                                              
+Screenshot Caso de Teste 3
+![image](https://github.com/user-attachments/assets/3104111b-4fb6-45be-a991-91344c83900c)
+
+Caso de Teste 4 – Comentário em Filme
+| Campo                  | Valor                                                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Caso de teste**      | CT-FUNC-004                                                                                                                          |
+| **Requisito**          | RF-006 – Usuário pode comentar em um filme                                                                                           |
+| **Pré-condição**       | Usuário autenticado; filme com modal aberto                                                                                          |
+| **Passos**             | 1. Abrir modal de um filme<br>2. Digitar comentário no campo<br>3. Clicar em "Enviar Comentário"<br>4. Verificar se comentário aparece na lista |
+| **Métrica**            | Comentário salvo e exibido corretamente                                                                                              |
+| **Resultado Esperado** | Comentário aparece na lista logo após envio                                                                                          |
+| **Resultado Obtido**   | Comentário visível na UI após envio; sem erros                                                                                       |
+| **Status**             | Passou                                                                                                                               |
+| **Observações**        | API respondeu com status 200; feedback visual positivo.                                                                              |
+
+Screenshots Caso de teste 4
+![image](https://github.com/user-attachments/assets/2eb9b93d-87f9-498d-98e5-8ac57b41347b)
+![image](https://github.com/user-attachments/assets/de3df03b-56b4-4e2c-97c9-a62ba3b5586c)
+
+Caso de Teste 5 – Busca por Filme
+| Campo                  | Valor                                                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-FUNC-005                                                                                                           |
+| **Requisito**          | RF-002 – Sistema permite buscar filmes por título                                                                     |
+| **Pré-condição**       | App aberto; campo de busca visível                                                                                    |
+| **Passos**             | 1. Digitar “Titanic” no campo de busca<br>2. Pressionar Enter ou clicar na lupa<br>3. Verificar a lista de resultados |
+| **Métrica**            | Lista atualizada com filmes relacionados ao termo                                                                     |
+| **Resultado Esperado** | Filmes com “Titanic” são exibidos na grade                                                                            |
+| **Resultado Obtido**   | Resultado retornado corretamente com imagem e título                                                                  |
+| **Status**             | Passou                                                                                                                |
+| **Observações**        | Tempo de resposta 352 ms; sem erros na Network.                                                                       |
+
+Screenshot Caso de teste 5
+![image](https://github.com/user-attachments/assets/0ad5b238-1d58-4251-9dc1-f59173190204)
+
+
+
+
 
 # Referências
 
