@@ -149,7 +149,13 @@ Para o desenvolvimento deste projeto mobile, nosso objetivo foi criar uma aplica
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+<!--[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]-->
+
+Para garantir a integridade dos dados e a privacidade dos usuários na aplicação de gerenciamento de filmes, serão adotadas medidas essenciais de segurança. A plataforma foi pensada para oferecer uma experiência segura, protegendo informações sensíveis e controlando o acesso aos recursos de forma eficiente, em conformidade com diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD).
+
+- **Requisições HTTPS**: Garantem a confidencialidade e integridade das informações trocadas entre o frontend e a API.
+- **Autenticação via JWT**: Permite um controle de acesso seguro, sem necessidade de sessões no servidor (autenticação sem estado).
+- **Criptografia de senhas**: As credenciais dos usuários são protegidas com algoritmos de criptografia robustos, prevenindo vazamentos de informações sensíveis.
 
 ## Implantação
 
