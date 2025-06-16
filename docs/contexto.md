@@ -1,14 +1,15 @@
 # Introdução
 
-Com o crescimento das plataformas de streaming e o fácil acesso a uma grande variedade de filmes, os espectadores têm mais opções do que nunca. No entanto, essa abundância de conteúdo também pode tornar a escolha de um filme uma tarefa desafiadora, especialmente sem uma fonte confiável de avaliações e recomendações. Diante desse cenário, este projeto propõe o desenvolvimento de um sistema de avaliação de filmes, permitindo que os usuários compartilhem suas opiniões, atribuam notas e descubram novas recomendações personalizadas. O objetivo é criar uma plataforma intuitiva e acessível, onde qualquer pessoa possa avaliar filmes e encontrar sugestões alinhadas aos seus gostos. A justificativa para a criação deste sistema está na necessidade de oferecer um espaço centralizado para avaliações confiáveis, tornando a escolha de um filme mais prática e agradável. O sistema busca atender tanto aqueles que desejam opinar sobre filmes que assistiram quanto aqueles que procuram recomendações confiáveis para decidir o que assistir.
+Com o crescimento das plataformas de streaming e o fácil acesso a uma grande variedade de filmes, os espectadores têm mais opções do que nunca. No entanto, essa abundância de conteúdo também pode tornar a escolha do que assistir uma tarefa desafiadora, especialmente sem uma fonte confiável de avaliações e recomendações. Diante desse cenário, este projeto propõe o desenvolvimento de um sistema de avaliação de obras cinematográgicas, permitindo que os usuários compartilhem suas opiniões e descubram novas recomendações personalizadas.
+O objetivo é criar uma plataforma intuitiva e acessível, onde qualquer pessoa possa avaliar obras e encontrar sugestões alinhadas aos seus gostos. A justificativa para a criação deste sistema está na necessidade de oferecer um espaço centralizado para avaliações confiáveis, tornando a escolha de um filme mais prática e agradável. O sistema busca atender tanto aqueles que desejam opinar sobre filmes e séries que assistiram quanto aqueles que procuram recomendações confiáveis para decidir o que ver.
 
 ## Problema
 
 A proposta do projeto é proporcionar uma experiência mais precisa e satisfatória ao usuário, facilitando sua escolha de filmes, séries e programas de acordo com suas preferências individuais. e fornecendo um site confiável, com avaliações sinceras e uma comunidade ativa.
 
-A plataforma será estruturada de maneira a fornecer recomendações personalizadas, baseadas no histórico de interações do usuário, bem como nas preferências de outros membros. Além disso, nossa intenção é garantir um ambiente online seguro, no qual as avaliações e classificações sejam expressas de forma genuína e transparente, permitindo que os usuários tomem decisões assertivas.
+A plataforma foi estruturada de maneira a fornecer um ambiente personalizado, onde o usuário tem a liberdade de navegar e encontrar obras para comentar e favoritar. Além disso, nossa intenção é garantir um ambiente online seguro, no qual as avaliações e classificações sejam expressas de forma genuína e transparente, permitindo que os usuários tomem decisões assertivas.
 
-A aplicação também estimulará a formação de uma comunidade interativa, composta por indivíduos com interesses semelhantes, o que permitirá uma troca enriquecedora de opiniões e sugestões. Assim, buscamos não apenas fornecer recomendações precisas, mas também criar um espaço de interação e descoberta de novos conteúdos, que proporcionem uma experiência mais agradável e personalizada para cada usuário.
+Assim, buscamos não apenas fornecer recomendações precisas, mas também criar um espaço de interação e descoberta de novos conteúdos, que proporcionem uma experiência mais agradável e personalizada para cada usuário.
 
 ## Objetivos
 
@@ -17,12 +18,12 @@ De modo a atender ao público descrito, o objetivo deste trabalho é construir u
 ## Objetivos específicos
 
 
-- Construir um sistema Back-end para hospedar uma API de filmes.
+- Construi um sistema Back-end para hospedar uma API de avaliações de filmes.
 
 - Desenvolver uma aplicação web e móvel que ofereça:
   - Obras audiovisuais mais populares no momento.
   - Obras com melhores avaliações.
-  - Permitir que o usuario favorite um filme.
+  - Permitir que o usuario favorite uma obra.
   - Espaço para que o usuário comente as obras por meio de texto.
   - Desenvolver uma pagina que exiba filmes filtrados por gênero.
 
@@ -35,7 +36,7 @@ De acordo com um estudo realizado pelo instituto Reelgood em parceria com a Lear
 
 ## Público-Alvo
 
-O software será voltado para usuários que buscam sugestões personalizadas de filmes de forma rápida e eficiente. O público-alvo inclui:
+O software é voltado para usuários que buscam sugestões personalizadas de obras audiovisuais de forma rápida e eficiente. O público-alvo inclui:
 
 - Cinéfilos que desejam recomendações detalhadas e baseadas em suas preferências.
 
@@ -48,7 +49,7 @@ O software será voltado para usuários que buscam sugestões personalizadas de 
 - Indecisos que costumam demorar para escolher um filme e precisam de sugestões diretas.
 
 
-O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a escolha do próximo filme a ser assistido.
+O objetivo é oferecer uma experiência intuitiva e personalizada, facilitando a escolha da próxima obra a ser assistida.
 
 ## Diagramas de Personas
 Diagramas de personas são representações visuais de personagens fictícias que sintetizam as características, comportamentos, necessidades e objetivos de um grupo de usuários. Com base nelas, conseguiremos compreender e focar no público-alvo durante o desenvolvimento da aplicação.
@@ -116,15 +117,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
   - **Registro de usuários com autenticação via login e senha**: Permite aos usuários se cadastrarem e terem suas preferências salvas disponiveis a qualquer momento e com segurança.
    
-  - **Listas personalizadas**: Dá ao usuário a possibilidade de criar listas das suas obras favoritas.
+  - **Lista personalizada de Favoritos**: Dá ao usuário a possibilidade de criar uma lista das suas obras favoritas.
    
-  - **Avaliação de filmes com notas**: Permite aos usuários expressarem de forma quantitativa sua opinião sobre obras audiovisuias.
+  - **Avaliação de filmes com comentários**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre obras audiovisuias.
    
-  - **Críticas e resenhas**: Permite aos usuários expressarem de forma qualitativa sua opinião sobre obras audiovisuias e também saber a opnião de outras pessoas.
+  - **Mecanismo de pesquisa**: Possibilita aos usuários encontrar filmes, séries e programas de forma mais prática e rápida filtrando por diversos aspectos das obras.
    
-  - **Mecanismo de pesquisa com filtros**: Possibilita aos usuários encontrar filmes, séries e programas de forma mais prática e rápida filtrando por diversos aspectos das obras.
-   
-  - **Recomendações baseadas nos filmes assitidos e avaliados**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
+  - **Recomendações de obras melhores avaliadas**: Auxilia o usuário no processo de escolha de títulos para assistir, expandindo suas possibilidades e evitando o tédio.
    
   - **Cripitografia para armazenamento de senhas**: Mais segurança para os dados dos usuários.
    
