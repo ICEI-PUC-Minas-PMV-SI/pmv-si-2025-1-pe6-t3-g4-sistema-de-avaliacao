@@ -1,6 +1,7 @@
 # Introdução
 
 Com o crescimento das plataformas de streaming e o fácil acesso a uma grande variedade de filmes, os espectadores têm mais opções do que nunca. No entanto, essa abundância de conteúdo também pode tornar a escolha do que assistir uma tarefa desafiadora, especialmente sem uma fonte confiável de avaliações e recomendações. Diante desse cenário, este projeto propõe o desenvolvimento de um sistema de avaliação de obras cinematográgicas, permitindo que os usuários compartilhem suas opiniões e descubram novas recomendações personalizadas.
+
 O objetivo é criar uma plataforma intuitiva e acessível, onde qualquer pessoa possa avaliar obras e encontrar sugestões alinhadas aos seus gostos. A justificativa para a criação deste sistema está na necessidade de oferecer um espaço centralizado para avaliações confiáveis, tornando a escolha de um filme mais prática e agradável. O sistema busca atender tanto aqueles que desejam opinar sobre filmes e séries que assistiram quanto aqueles que procuram recomendações confiáveis para decidir o que ver.
 
 ## Problema
@@ -185,6 +186,6 @@ Insomnia
 
 ## Hospedagem
 
-Inicialmente utilizaremos a hospedagem em um PC para efetuarmos os testes. Em seguida prosseguiremos com a hospedagem no Heroku.
+Inicialmente utilizaremos a hospedagem em um PC para efetuarmos os testes. Em seguida prosseguiremos com a hospedagem pelo uso da Amazon EC2 (Elastic Computer Cloud) da AWS.
 
 
