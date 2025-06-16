@@ -1,11 +1,10 @@
 # APIs e Web Services
 
-O  foco do projeto é desenvolver uma aplicação de gerenciamento de obras cinematográficas, onde os usuários terão acesso a comentários e avaliações das obras, permitindo que alinhem suas escolhas de acordo com seus gostos pessoais. A API será responsável por fornecer os dados das produções, permitindo que os usuários registrem suas avaliações e recebam recomendações personalizadas, baseadas em suas preferências e interações com a plataforma.
+O  foco do projeto é desenvolver uma aplicação de gerenciamento de obras cinematográficas, onde os usuários terão acesso a comentários e avaliações das obras, permitindo que alinhem suas escolhas de acordo com seus gostos pessoais. A API será responsável por fornecer os dados das produções, permitindo que os usuários registrem suas avaliações e favoritem suas obras prediletas.
 
 
 ## Objetivos da API
-O objetivo é criar uma aplicação que estimule a interação dentro de uma comunidade com gostos semelhantes, permitindo a troca de conteúdos e oferecendo recomendações personalizadas com base nas preferências de cada usuário
-
+O objetivo é criar uma aplicação que estimule a interação dentro de uma comunidade com gostos semelhantes, permitindo a troca de conteúdos e oferecendo opções variadas do que assistir em seu tempo livre.
 
 ## Modelagem da Aplicação
 📚 Descrição da Estrutura de Dados da Aplicação
@@ -43,6 +42,8 @@ Sinopse (string) – Resumo da história do filme.
 
 FotoUrl (string) – Caminho da imagem de capa do filme.
 
+NotaMedia (double) - Nota média do filme.
+
 Relacionamentos:
 
 Um filme pode ter vários comentários.
@@ -56,9 +57,9 @@ Id (int) – Identificador único.
 
 Texto (string) – Conteúdo do comentário.
 
-UsuarioId (int) – Chave estrangeira que referencia o autor (Usuario).
+IdUsuario (int) – Chave estrangeira que referencia o autor (Usuario).
 
-FilmeId (int) – Chave estrangeira que referencia o filme comentado.
+TMDBFilmeId (int) – Chave estrangeira que referencia o filme comentado.
 
 Relacionamento:
 
@@ -93,10 +94,172 @@ Insomnia.
 
 ## API Endpoints
 
-## Endpoint 1: Obras
+## Endpoint 1: Obras Audiovisuais
 ### - Perquisa de Obras
 - Método: GET
 - URL: /api/Filmes/tmdb
+- Parâmetros:
+  - Id <int, chave Primária>: Id correspondente a obra.
+  - Titulo <string, Obrigatório>: Título da Obra.
+  - AnoLancamento <int>: Ano de Lançamento da Obra.
+  - Genero <string>: Gênero da Obra.
+  - Sinopse <string>: Sinopse da Obra.
+  - FotoUrl <string>: Foto/Poster da Obra.
+
+- Resposta:
+  - Sucesso (200 OK): Retorna as obras mais populares presentes no banco de dados da API do TMDB
+    ```
+    {
+	"$id": "1",
+	"$values": [
+		{
+			"$id": "2",
+			"id": 574475,
+			"titulo": "Premonição 6: Laços de Sangue",
+			"anoLancamento": 2025,
+			"genero": "Terror",
+			"sinopse": "Atormentada por um pesadelo violento recorrente, a estudante universitária Stefanie volta para casa para encontrar a única pessoa que pode quebrar o ciclo e salvar sua família do destino horrível que inevitavelmente os aguarda.",
+			"fotoUrl": "https://image.tmdb.org/t/p/w500/niTRdfNCT29PXU9YpPPuISrBIw7.jpg",
+			"notaMedia": 7.049,
+			"usuariosFavoritaram": {
+				"$id": "3",
+				"$values": []
+			},
+			"comentarios": {
+				"$id": "4",
+				"$values": []
+			},
+			"links": {
+				"$id": "5",
+				"$values": []
+			}
+		},
+		{
+			"$id": "6",
+			"id": 1087891,
+			"titulo": "Operação Vingança",
+			"anoLancamento": 2025,
+			"genero": "Suspense",
+			"sinopse": "Depois que sua esposa é tragicamente morta em um ataque terrorista em Londres, um criptógrafo da CIA exige que seus chefes vão atrás dos assassinos. Quando fica claro que eles não agirão devido a prioridades internas conflitantes, ele chantageia a agência para treiná-lo e deixá-lo ir atrás deles sozinho.",
+			"fotoUrl": "https://image.tmdb.org/t/p/w500/bAQAGxxqwK8bcqEYLEo6cN7UNn6.jpg",
+			"notaMedia": 6.928,
+			"usuariosFavoritaram": {
+				"$id": "7",
+				"$values": []
+			},
+			"comentarios": {
+				"$id": "8",
+				"$values": []
+			},
+			"links": {
+				"$id": "9",
+				"$values": []
+			}
+		},
+    ...
+    ```
+  - Erro (404 Not Found)
+    ```
+    {
+     "Nenhum filme encontrado."
+    }
+    ```
+
+### - Obras Melhores Avaliadas
+- Método: GET
+- URL: /api/Avaliacoes/top-rated
+- Parâmetros:
+  - Id <int, chave Primária>: Id correspondente a obra.
+  - Titulo <string, Obrigatório>: Título da Obra.
+  - AnoLancamento <int>: Ano de Lançamento da Obra.
+  - Genero <string>: Gênero da Obra.
+  - Sinopse <string>: Sinopse da Obra.
+  - FotoUrl <string>: Foto/Poster da Obra.
+
+- Resposta:
+  - Sucesso (200 OK): Retorna as obras com as melhores notas presentes no banco de dados da API do TMDB
+    ```
+    {
+    "$id": "1",
+    "$values": [
+    {
+      "$id": "2",
+      "id": 278,
+      "titulo": "Um Sonho de Liberdade",
+      "anoLancamento": 1994,
+      "genero": "Drama",
+      "sinopse": "Em 1946, Andy Dufresne, um banqueiro jovem e bem sucedido, tem a sua vida radicalmente modificada ao ser condenado por um crime que nunca cometeu, o homicídio de sua esposa e do amante dela. Ele é mandado para uma prisão que é o pesadelo de qualquer detento, a Penitenciária Estadual de Shawshank, no Maine. Lá ele irá cumprir a pena perpétua. Andy logo será apresentado a Warden Norton, o corrupto e cruel agente penitenciário, que usa a Bíblia como arma de controle e ao Capitão Byron Hadley que trata os internos como animais. Andy faz amizade com Ellis Boyd Redding, um prisioneiro que cumpre pena há 20 anos e controla o mercado negro da instituição.",
+      "fotoUrl": "https://image.tmdb.org/t/p/w500/xSnM4ahmz692msbMTBsfBWHvR3M.jpg",
+      "notaMedia": 8.711,
+      "usuariosFavoritaram": {
+        "$id": "3",
+        "$values": []
+      },
+      "comentarios": {
+        "$id": "4",
+        "$values": []
+      },
+      "links": {
+        "$id": "5",
+        "$values": []
+      }
+    },
+    {
+      "$id": "6",
+      "id": 238,
+      "titulo": "O Poderoso Chefão",
+      "anoLancamento": 1972,
+      "genero": "Drama",
+      "sinopse": "Em 1945, Don Corleone é o chefe de uma mafiosa família italiana de Nova York. Ele costuma apadrinhar várias pessoas, realizando importantes favores para elas, em troca de favores futuros. Com a chegada das drogas, as famílias começam uma disputa pelo promissor mercado. Quando Corleone se recusa a facilitar a entrada dos narcóticos na cidade, não oferecendo ajuda política e policial, sua família começa a sofrer atentados para que mudem de posição. É nessa complicada época que Michael, um herói de guerra nunca envolvido nos negócios da família, vê a necessidade de proteger o seu pai e tudo o que ele construiu ao longo dos anos.",
+      "fotoUrl": "https://image.tmdb.org/t/p/w500/kpZcRSrYYkowpiw2d6ZVdF1HWFc.jpg",
+      "notaMedia": 8.686,
+      "usuariosFavoritaram": {
+        "$id": "7",
+        "$values": []
+      },
+      "comentarios": {
+        "$id": "8",
+        "$values": []
+      },
+      "links": {
+        "$id": "9",
+        "$values": []
+      }
+    },
+    {
+      "$id": "10",
+      "id": 240,
+      "titulo": "O Poderoso Chefão: Parte II",
+      "anoLancamento": 1974,
+      "genero": "Drama",
+      "sinopse": "Após a máfia matar sua família, o jovem Vito foge da sua cidade na Sicília e vai para a América. Vito luta para manter sua família. Ele mata Black Hand Fanucci, que exigia dos comerciantes uma parte dos seus ganhos. Com a morte de Fanucci, o poderio de Vito cresce, mas sua família é o que mais importa para ele. Agora baseado no Lago Tahoe, Michael planeja fazer incursões em Las Vegas e Havana instalando negócios ligados ao lazer, mas descobre que aliados como Hyman Roth estão tentando matá-lo.",
+      "fotoUrl": "https://image.tmdb.org/t/p/w500/7g6wvsWHxBQujUcSXvZLhdFpDUy.jpg",
+      "notaMedia": 8.571,
+      "usuariosFavoritaram": {
+        "$id": "11",
+        "$values": []
+      },
+      "comentarios": {
+        "$id": "12",
+        "$values": []
+      },
+      "links": {
+        "$id": "13",
+        "$values": []
+      }
+    },
+    ...
+    ```
+- Erro (404 Not Found)
+    ```
+    {
+     "Nenhum filme encontrado."
+    }
+    ```
+
+### - Perquisa de Obras Específicas
+- Método: GET
+- URL: /api/Filmes/tmdb/{id}
 - Parâmetros:
   - Id <int, chave Primária>: Id correspondente a obra.
   - Titulo <string, Obrigatório>: Título da Obra.
@@ -159,7 +322,7 @@ Insomnia.
 				"$id": "5",
 				"$values": []
 			}
-		}
+    ...
     ```
   - Erro (404 Not Found)
     ```
@@ -169,7 +332,75 @@ Insomnia.
     ```
 
 ## Endpoint 2: Avaliações de Obras
-### - Comentar obra
+
+### - Obter Comentários de um Usuário
+- Método: GET
+- URL: /api/Comentarios?idUsuario={idUsuario}
+- Parâmetros:
+ - idUsuario <int, chave Primária Obrigatória>: Identificador do Usuário.
+
+- Resposta:
+  - Sucesso (200 OK):
+    ```
+    {
+    "$id": "1",
+    "$values": [
+    {
+      "$id": "2",
+      "id": 4,
+      "idUsuario": 1,
+      "idFilme": 254,
+      "comentario": "Macaco grande mesmo",
+      "titulo": "King Kong"
+    },
+    {
+      "$id": "3",
+      "id": 5,
+      "idUsuario": 1,
+      "idFilme": 950387,
+      "comentario": "Muito quadrado!!!!",
+      "titulo": "Um Filme Minecraft"
+    },
+    {
+      "$id": "4",
+      "id": 6,
+      "idUsuario": 1,
+      "idFilme": 822119,
+      "comentario": "Bem-vindo novo capitão!!",
+      "titulo": "Capitão América: Admirável Mundo Novo"
+    },
+    {
+      "$id": "5",
+      "id": 7,
+      "idUsuario": 1,
+      "idFilme": 129,
+      "comentario": "Parece fofo mas te faz chorar o resto da semana! ;-;",
+      "titulo": "A Viagem de Chihiro"
+    },
+    {
+      "$id": "6",
+      "id": 9,
+      "idUsuario": 1,
+      "idFilme": 123,
+      "comentario": "Cuidado com o anel man",
+      "titulo": "O Senhor dos Anéis"
+    },
+    {
+      "$id": "7",
+      "id": 10,
+      "idUsuario": 1,
+      "idFilme": 950387,
+      "comentario": "Continua bem quadrado",
+      "titulo": "Um Filme Minecraft"
+    }
+    ]
+    }
+    ```
+  - Erro (404 Not Found): Nenhum comentário encontrado.
+    ```
+    ```
+
+### - Comentar Obra
 - Método: POST
 - URL: /api/comentarios
 - Parâmetros:
@@ -197,7 +428,7 @@ Insomnia.
     ```
     ```
 
-### - Editar comentário
+### - Editar Comentário
 - Método: PUT
 - URL: /api/comentarios/{Id}
 - Parâmetros:
@@ -214,7 +445,123 @@ Insomnia.
     ```
     ```
 
-## Endpoint 3: Gestão de Usuário
+### - Excluir Comentário
+- Método: DELETE
+- URL: /api/comentarios/{Id}
+- Parâmetros:
+ - Id <int, chave Primária>: Identificador do Comentário.
+
+- Resposta:
+  - Sucesso (204 No Content):  Sem corpo de resposta.
+    ```
+    ```
+  - Erro (404 Not Found): Sem corpo de resposta.
+    ```
+    ```
+    
+## Endpoint 3: Obras Favoritadas
+
+### - Obras Favoritadas
+- Método: GET
+- URL: /api/Favoritos
+- Não possui parâmetros.
+
+- Resposta:
+  - Sucesso (200 OK):
+    ```
+    {
+	"$id": "1",
+	"$values": [
+		{
+			"$id": "2",
+			"idUsuario": 1,
+			"idFilme": 950387,
+			"filme": {
+				"$id": "3",
+				"id": 950387,
+				"titulo": "Um Filme Minecraft"
+			}
+		},
+		{
+			"$id": "4",
+			"idUsuario": 1,
+			"idFilme": 986056,
+			"filme": {
+				"$id": "5",
+				"id": 986056,
+				"titulo": "Thunderbolts*"
+			}
+		},
+		{
+			"$id": "6",
+			"idUsuario": 1,
+			"idFilme": 1233413,
+			"filme": {
+				"$id": "7",
+				"id": 1233413,
+				"titulo": "Pecadores"
+			}
+		}
+	]}
+    ```
+  - Erro (404 Not Found): Sem corpo de resposta.
+    ```
+    ```
+
+### - Favoritar Obra
+- Método: POST
+- URL: /api/Favoritos
+- Parâmetros:
+ - idUsuario <int, Obrigatório>: Identificador do Usuário.
+ - idFilme <int, Obrigatório>: Identificador da Obra.
+
+- Resposta:
+  - Sucesso (200 OK):
+    ```
+    "Filme adicionado aos favoritos!"
+    ```
+  - Erro (400 Bad Request): Sem corpo de resposta.
+    ```
+    ```
+
+### - Excluir Obra dos Favoritos
+- Método: DELETE
+- URL: /api/Favoritos/{idUsuario}/{idFilme})
+- Parâmetros:
+ - idUsuario <int, Obrigatório>: Identificador do Usuário.
+ - idFilme <int, Obrigatório>: Identificador da Obra.
+
+- Resposta:
+  - Sucesso (200 OK):  Sem corpo de resposta.
+    ```
+    "Filme removido dos favoritos!"
+    ```
+  - Erro (404 Not Found):
+    ```
+    "Favorito não encontrado."
+    ```
+
+## Endpoint 4: Gestão de Usuário
+
+### - Pesquisar Usuário através do E-mail
+- Método: GET
+- URL: /api/Usuarios/public-by-email?email={email}
+- Parâmetros:
+ - Email <string, Obrigatório>: E-mail cadastrado do Usuário.
+
+- Resposta:
+  - Sucesso (200 OK):
+    ```
+    {
+    "$id": "1",
+    "nomeDeUsuario": "Laura0202",
+    "id": 1
+    }
+    ```
+  - Erro (404 Not Found): Sem corpo de resposta.
+    ```
+    ```
+
 ### - Criação de Usuário
 - Método: POST
 - URL: /api/usuarios
