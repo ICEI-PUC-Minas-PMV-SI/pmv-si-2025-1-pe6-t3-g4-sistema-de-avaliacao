@@ -90,7 +90,7 @@ Página que inclui os posteres das obras e sua nota média, representada por est
 
 Modal de detalhes ao clicar em um filme, exibindo título, ano de lançamento, gênero, sinopse e sua nota, que permite ao Usuário favoritar e avaliar a obra selecionada, além de vizualizar quantos a favoritaram e o que outros Usuários comentaram sobre.
 
-![image](https://github.com/user-attachments/assets/07606711-9935-4246-92b1-11d86fda77b3)
+![image](https://github.com/user-attachments/assets/4f0afa67-def3-45fe-b6d2-b387a31f0cff)
 
 
 <!-- - **Perfil Público do Usuário**: -->
