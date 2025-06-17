@@ -194,12 +194,46 @@ Testes de integração de API
 | **Passos**             | 1. Acessar a tela/API de login<br>2. Digitar email = “paollaks@hotmail.com”<br>3. Digitar senha = “Ace456$” |
 | **Dados de Entrada**   | 1. email = “paollaks@hotmail.com”<br>2. senha = “Ace456$”                                                          |
 | **Resultado Esperado** | 200 OK; retorno de JSON com token (JWT) e dados do usuário: id, nome e email                      |
-| **Resultado Obtido**   | Botão "entrar" não funcionou                     |
-| **Status**             | Falhou                                                                    |
-| **Observações**        | Checar onde está o erro.
+| **Resultado Obtido**   | Usuário conectado com sucesso                  |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Redirecionamento para Home após Login
 
-**Screenshot CT-RF001-01**
-![image](https://github.com/user-attachments/assets/f2bc78ea-2187-4bd2-b5d8-a7ceaf0874f1)
+**Teste Login**
+![image](https://github.com/user-attachments/assets/975b33b4-829b-4699-9261-8c51967df0f2)
+
+
+
+**Caso de teste : Permitir que os usuários recuperem sua senha**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF001-02                                                               |
+| **Pré-condição**       | Usuário previamente cadastrado com email = “laura@example.com” e senha = “1235”                                        |
+| **Passos**             | 1. Acessar a tela/API de login e selecionar a opção "Esqueceu a senha?"<br>2. Digitar email = “laura@example.com”<br>3. Digitar uma nova senha = “1234” |
+| **Dados de Entrada**   | 1. email = “laura@example.com”<br>2. nova senha = “1234”                                                          |
+| **Resultado Esperado** | 200 OK; retorno de JSON com token (JWT) e dados do usuário: email e nova senha                      |
+| **Resultado Obtido**   | Senha atualizada com sucesso                  |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Redirecionamento para tela de Login
+
+**Teste Renovar Senha**
+![image](https://github.com/user-attachments/assets/9b8cb5b6-49cb-4894-9734-a797ec924814)
+
+
+
+**Caso de teste : Permitir que novos usuários se cadastrem**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF001-03                                                               |
+| **Pré-condição**       | Usuário fornece seus dados: Nome Completo, email, senha e Nome de Usuário                                        |
+| **Passos**             | 1. Acessar a tela/API de login e selecionar a opção "É sua primeira vez aqui?"<br>2. Digitar dados existentes<br>3. |
+| **Dados de Entrada**   | 1. Nome Completo = "Laura Rocha"<br>2. email = “laural@example.com”<br>3. senha = “1236”<br>4. Nome de Usuário = LauraRocha    |
+| **Resultado Esperado** | 200 OK; retorno de JSON com token (JWT) e dados do usuário: id, nomeCompleto, nomeDeUsuario, email e senha                    |
+| **Resultado Obtido**   | Cadastro realizado com sucesso                  |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Redirecionamento para Home
+
+**Teste Cadastro de Usuário**
+![image](https://github.com/user-attachments/assets/ffa9e0da-c178-4fb3-9ab8-98b173f51b6e)
 
 
 
@@ -207,16 +241,16 @@ Testes de integração de API
 | Campo                  | Valor                                                           |
 | ---------------------- | ------------------------------------------------------------------------- |
 | **Caso de teste**      | CT-RF002-01                                                               |
-| **Pré-condição**       | Usuário autenticado (id = 1) e filme com id = 254 cadastrado no sistema                                        |
-| **Passos**             | 1. Acessar seção/API de favoritos<br>2. Selecionar o filme com id = 254<br>3. Clicar em “Adicionar aos Favoritos” |
-| **Dados de Entrada**   | 1. usuarioId = 5<br>2. filmeId = 254                                                          |
-| **Resultado Esperado** | 201 Created; retorno de JSON com campos: idFavorito, usuarioId = 1, filmeId = 254                      |
-| **Resultado Obtido**   | Retornou JSON com idFavorito = 1, usuarioId = 1, filmeId = 254                     |
+| **Pré-condição**       | Usuário autenticado e filme cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar seção/API que exibam obras<br>2. Selecionar o filme com id = 254<br>3. Clicar no ícone de coração para “Adicionar aos Favoritos” |
+| **Dados de Entrada**   | 1. IdUsuario = 6<br>2. IdFilme = 254                                                          |
+| **Resultado Esperado** | 200 OK; retorno da mensagem "Filme adicionado aos favoritos!"                      |
+| **Resultado Obtido**   | Retornou Filme adicionado aos favoritos!                     |
 | **Status**             | Passou                                                                    |
-| **Observações**        | confirmação visual no front-end, presença do favorito na lista do usuário.
+| **Observações**        | Confirmação visual no front-end, presença do favorito na lista do usuário.
 
-**Screenshot CT-RF002-1**
-Filme adicionado na tela de "Favoritados" do usuário. ![image](https://github.com/user-attachments/assets/fbba4642-a200-4c2f-afcf-6e90069d18f8)
+**Teste Favoritar Obras**
+Filme adicionado a tela de "Favoritadas" do usuário. ![image](https://github.com/user-attachments/assets/479bc6e5-a15d-4188-9d19-fc7d738dab44)
 
 
 
@@ -224,17 +258,58 @@ Filme adicionado na tela de "Favoritados" do usuário. ![image](https://github.c
 | Campo                  | Valor                                                           |
 | ---------------------- | ------------------------------------------------------------------------- |
 | **Caso de teste**      | CT-RF003-01                                                               |
-| **Pré-condição**       | Usuário autenticado e filme com id = 986056 cadastrado no sistema                                        |
-| **Passos**             | 1. Acessar a tela/API de comentários do filme<br>2. Preencher campo texto com comentário válido<br>3. Clicar em “Salvar” |
-| **Dados de Entrada**   | 1. usuarioId = 1<br>2. filmeId = 986056<br>3. texto = “Muito bom!”                                                          |
-| **Resultado Esperado** | 201 Created; retorno de JSON com campos id, usuarioId, filmeId e texto                      |
-| **Resultado Obtido**   | Retornou JSON com id = 3, usuarioId = 1, filmeId = 986056 e texto = “Muito bom!”                    |
+| **Pré-condição**       | Usuário autenticado e filme cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar a tela/API que exibam obras<br>2. Preencher campo texto com comentário válido<br>3. Clicar em “Salvar” |
+| **Dados de Entrada**   | 1. IdUsuario = 6<br>2. TMDBFilmeId = 986056<br>3. Texto = “Muito bom!”                                                          |
+| **Resultado Esperado** | 201 Created; retorno de JSON com campos id do comentário, texto, idUsuario e tmdbFilmeId                      |
+| **Resultado Obtido**   | Retornou JSON com id = 3, texto = “Muito bom!”, idUsuario = 1 e tmdbFilmeId = 986056                    |
 | **Status**             | Passou                                                                    |
-| **Observações**        | Comentário aparece imediatamente na lista de comentários do filme; tempo de resposta < 500 ms.                           |
+| **Observações**        | Comentário aparece imediatamente na lista de comentários da obra; tempo de resposta < 500 ms.                           |
 
-**Screenshots CT-RF003-01**
-Fazendo o comentário. ![image](https://github.com/user-attachments/assets/ccd381a5-d9e9-4af0-865e-a1c1b76cb3b1)
-Comentario salvo com sucesso. ![image](https://github.com/user-attachments/assets/206fe5b9-3c4a-4514-97b4-ef69c97a4819)
+**Teste Comentar Obras**
+Fazendo o comentário. ![image](https://github.com/user-attachments/assets/f5aa2655-671a-4f26-8995-72891783df01)
+
+Comentario salvo com sucesso. ![image](https://github.com/user-attachments/assets/96ac262e-2169-4854-8c4f-2a9ff213719f)
+
+
+
+**Caso de teste : Permitir que os usuários editem suas avaliações.**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF003-02                                                               |
+| **Pré-condição**       | Usuário autenticado e filme cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar a tela/API de obras Avaliadas<br>2. Selecionar a obra que deseja editar o comentário e clicar em "Editar"<br>3. Preencher campo texto com um novo comentário válido<br>3. Clicar em “Ok” |
+| **Dados de Entrada**   | 1. IdUsuario = 6<br>2. TMDBFilmeId = 986056<br>3. Texto = “Muito bom mesmo!”                                                          |
+| **Resultado Esperado** | 200 OK; retorno da mensagem "Comentário atualizado!"                      |
+| **Resultado Obtido**   | Retornou "Comentário atualizado!"                    |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Comentário atualizado aparece imediatamente na lista de comentários da obra; tempo de resposta < 300 ms.                           |
+
+**Teste Editar Comentário**
+Atualizando o comentário.![image](https://github.com/user-attachments/assets/26af3cfb-4572-410b-8c83-e9bca33106d6)
+
+Comentário atualizado.![image](https://github.com/user-attachments/assets/8d46e93a-7fe9-42e9-8ba3-77ffa020ba91)
+
+
+
+**Caso de teste : Permitir que os usuários excluam suas avaliações**
+| Campo                  | Valor                                                           |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Caso de teste**      | CT-RF003-03                                                               |
+| **Pré-condição**       | Usuário autenticado e filme cadastrado no sistema                                        |
+| **Passos**             | 1. Acessar a tela/API de obras Avaliadas<br>2. Selecionar a obra que deseja excluir o comentário e clicar em "Excluir"<br>3. Clicar em “Ok” no alerta "Deseja realmente excluir o comentário?" |
+| **Dados de Entrada**   | 1. IdUsuario = 6<br>2. TMDBFilmeId = 986056<br>3. Texto = “Muito bom mesmo!”                                                          |
+| **Resultado Esperado** | 200 OK; retorno da mensagem "Comentário excluído!"                     |
+| **Resultado Obtido**   | Retornou "Comentário excluído!"                     |
+| **Status**             | Passou                                                                    |
+| **Observações**        | Comentário é imediatamente excluido e obra saí da lista de Avaliadas; tempo de resposta < 220 ms.                           |
+
+**Teste Excluir Comentário**
+Comentário sendo excluído.![image](https://github.com/user-attachments/assets/808eae40-3c9f-4d0e-9b31-c239dacd08ae)
+
+Confirmação da exclusão.![image](https://github.com/user-attachments/assets/de0f634d-5d73-4814-9df8-3259eeccdd4d)
+
+Tela de obras Avaliadas vazia.![image](https://github.com/user-attachments/assets/943307c3-f666-47f1-bceb-fc2b383c8e02)
 
 
 
@@ -250,8 +325,10 @@ Comentario salvo com sucesso. ![image](https://github.com/user-attachments/asset
 | **Status**             | Passou                                                                    |
 | **Observações**        | Filme aparece imediatamente na tela. Tempo de resposta < 214 ms.                                                 |
 
-**Screenshot CT-RF004-01** 
+**Teste de Busca** 
 ![image](https://github.com/user-attachments/assets/adcfc87c-2791-461b-9025-dfe7fd6a07f3)
+
+
 
 | Campo                  | Valor                                                                                  |
 | ---------------------- | --------------------------------------------------------------------------------------------------- |
@@ -264,8 +341,9 @@ Comentario salvo com sucesso. ![image](https://github.com/user-attachments/asset
 | **Status**             | Passou                                                                                              |
 | **Observações**        | Tempo de resposta rápido.                                                                           |
 
-**Screenshot CT-RF004-02**
+**Teste de Busca**
 ![image](https://github.com/user-attachments/assets/74e27565-aa04-43bd-9039-33a501442986)
+
 
 
 **Caso de teste : Requisito Não Funcional: Tempo de resposta médio abaixo de 2 segundos para operações comuns**
