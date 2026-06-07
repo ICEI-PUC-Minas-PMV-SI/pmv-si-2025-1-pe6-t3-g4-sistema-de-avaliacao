@@ -2,28 +2,26 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title:
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - family-names: Gonçalves dos Santos
+    given-names: Carlos Eduardo
+  - family-names: de Souza
+    given-names: Jussara Ribeiro
+  - family-names: Bastos Rocha
+    given-names: Laura Luana
+  - family-names: Alves Soares
+    given-names: Paolla
+  - family-names: Costa Lara
+    given-names: Thiago Vinicius
+  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: Ferreira de Souza
+    given-names: Kleber Jacques
 keywords:
-  -
-  -
+  - Avaliação
+  - Filmes
+  - Séries
+  - Obras Audiovisuais
 repository-code:
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2025-06-22
